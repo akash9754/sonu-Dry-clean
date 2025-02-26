@@ -5,8 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+       
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      
 </head>
 <body>
+
+    <!-- ======================== Navbar Start ========================= -->
+
+                <div class="flex h-16 mt-3 mx-5 justify-between items-center">
+                    <!-- Logo -->
+                    <img src="img/logo.webp" class="w-14 h-14" alt="logo">
+
+                    <!-- Desktop Menu (Hidden on Mobile) -->
+                    <div class="hidden md:flex text-lg items-center space-x-4">
+                        <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Home</a>
+                        <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Browse Menu</a>
+                        <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Special Offers</a>
+                        <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="Restaurant.html">Restaurants</a>
+                        <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Track Order</a>
+                    </div>
+
+                    <!-- Login/Signup (Hidden on Mobile) -->
+                    <button class="hidden md:flex h-12 w-48 text-lg justify-center items-center bg-slate-950 text-white rounded-full p-2">
+                        <img src="img/Male User.png" class="w-8 h-7" alt="">
+                        <p>Login/Signup</p>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menu-btn" class="md:hidden text-3xl">
+                        ☰
+                    </button>
+                </div>
+
+                <!-- Mobile Menu (Initially Hidden) -->
+                <div id="mobile-menu" class="hidden flex-col items-center space-y-4 p-5 bg-white shadow-lg mt-2 md:hidden">
+                    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Home</a>
+                    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Browse Menu</a>
+                    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Special Offers</a>
+                    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="Restaurant.html">Restaurants</a>
+                    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Track Order</a>
+                    <button class="block h-12 w-48 text-lg bg-slate-950 text-white rounded-full p-2 flex items-center justify-center">
+                        <img src="img/Male User.png" class="w-8 h-7" alt="">
+                        <p>Login/Signup</p>
+                    </button>
+                </div>
+
+    <!-- ======================== Navbar End ========================= -->
     
+
+
+    <!-- ========================  swaperJs    ========================= -->
+    <div class="swiper mySwiper1 w-full h-auto relative mt-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/image1.jpg" class="w-full h-auto object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/image2.jpg" class="w-full h-auto object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/image3.jpg" class="w-full h-auto object-cover">
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next !text-white"></div>
+        <div class="swiper-button-prev !text-white"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      
+    <!-- ======================== swaperJs End ========================= -->
+    <!-- ======================== item list  ========================= -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-5">
+                
+                <!-- Item 1 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="img/homeCleaning.webp" class="w-full h-32 object-cover rounded" alt="Item 1">
+                    <h3 class="mt-3 text-lg font-semibold text-center">Full Home Cleaning</h3>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="img/dusting.webp" class="w-full h-32 object-cover rounded" alt="Item 2">
+                    <h3 class="mt-3 text-lg font-semibold text-center">Full Home Dusting</h3>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="img/sofa.webp" class="w-full h-32 object-cover rounded" alt="Item 3">
+                    <h3 class="mt-3 text-lg font-semibold text-center">Sofa Dry Cleaning</h3>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="img/waterTank.webp" class="w-full h-32 object-cover rounded" alt="Item 4">
+                    <h3 class="mt-3 text-lg font-semibold text-center">WaterTank & mini services</h3>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="img/kitchenCleaning.webp" class="w-full h-32 object-cover rounded" alt="Item 5">
+                    <h3 class="mt-3 text-lg font-semibold text-center">Kitchen Cleaning</h3>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="img/bathroomCleaning.webp" class="w-full h-32 object-cover rounded" alt="Item 6">
+                    <h3 class="mt-3 text-lg font-semibold text-center">Bathroom Cleaning</h3>
+                </div>
+
+            </div>
+
+    <!-- ======================== item list End ========================= -->
+
+    <!-- ======================== Notice bord End ========================= -->
+    <div class="max-w-sm mx-auto mt-6 p-5 bg-gradient-to-r from-orange-500 to-yellow-400 text-white text-center rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
+        <h2 class="text-2xl font-bold">Expert Visit & Consultation</h2>
+        <p class="text-lg mt-2">@ Rs. <span class="font-extrabold text-3xl">250</span> only</p>
+        <p class="text-xs mt-1 opacity-80">* T&C Applied</p>
+    </div>
+    
+    <!-- ======================== item list End ========================= -->
+    <!-- ======================== item list End ========================= -->
+
+            <!-- Swiper Container -->
+          <!-- Swiper Container for Auto Scrolling Cards -->
+          <div class="swiper mySwiper2 w-full flex justify-center items-center px-4">
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide  bg-amber-300 flex justify-">
+                    <div class="w-80 bg-white shadow-lg rounded-lg overflow-hidden ">
+                        <img src="img1.jpg" class="w-full h-40 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-bold text-gray-800">Card 1 Title</h3>
+                            <p class="text-gray-600 text-sm mt-2">Short description of the service.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="w-80 bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="img2.jpg" class="w-full h-40 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-bold text-gray-800">Card 2 Title</h3>
+                            <p class="text-gray-600 text-sm mt-2">Short description of the service.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="w-80 bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="img3.jpg" class="w-full h-40 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-bold text-gray-800">Card 3 Title</h3>
+                            <p class="text-gray-600 text-sm mt-2">Short description of the service.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="w-80 bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="img4.jpg" class="w-full h-40 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-bold text-gray-800">Card 4 Title</h3>
+                            <p class="text-gray-600 text-sm mt-2">Short description of the service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<!-- Include Swiper's JS -->
+
+
+
+
+    <!-- ======================== item list End ========================= -->
+
+    
+
+      
+  
+    <div class="w-full h-[100px] bg-gray-200"></div>
+
+
+    <script src="main.js"></script>
+    <!-- swaper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+          loop: true,
+          autoplay: { delay: 3000 },
+          pagination: { el: ".swiper-pagination", clickable: true },
+          navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+        });
+     
+           
+        // script>
+        var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1, // Default (Mobile: 1 card)
+    spaceBetween: 15, 
+    autoplay: {        
+      delay: 2500,     
+      disableOnInteraction: false
+    },
+    breakpoints: {  
+      768: { // Tablet & Up (768px+)
+        slidesPerView: 2,
+      },
+      1024: { // Desktop & Up (1024px+)
+        slidesPerView: 4,
+      }
+    },
+    loop: true, 
+  });
+        </script>
+      
 </body>
 </html>
