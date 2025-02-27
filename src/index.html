@@ -47,7 +47,7 @@
                     <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Special Offers</a>
                     <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="Restaurant.html">Restaurants</a>
                     <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Track Order</a>
-                    <button class="block h-12 w-48 text-lg bg-slate-950 text-white rounded-full p-2 flex items-center justify-center">
+                    <button class="h-12 w-48 text-lg bg-slate-950 text-white rounded-full p-2 flex items-center justify-center">
                         <img src="img/Male User.png" class="w-8 h-7" alt="">
                         <p>Login/Signup</p>
                     </button>
@@ -121,18 +121,17 @@
 
     <!-- ======================== item list End ========================= -->
 
-    <!-- ======================== Notice bord End ========================= -->
+    <!-- ======================== Notice bord ========================= -->
     <div class="max-w-sm mx-auto mt-6 p-5 bg-gradient-to-r from-orange-500 to-yellow-400 text-white text-center rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
         <h2 class="text-2xl font-bold">Expert Visit & Consultation</h2>
         <p class="text-lg mt-2">@ Rs. <span class="font-extrabold text-3xl">250</span> only</p>
         <p class="text-xs mt-1 opacity-80">* T&C Applied</p>
     </div>
     
-    <!-- ======================== item list End ========================= -->
-    <!-- ======================== item list End ========================= -->
+    <!-- ======================== Notice bord End ========================= -->
 
-            <!-- Swiper Container -->
-          <!-- Swiper Container for Auto Scrolling Cards -->
+    <!-- ======================= Swiper Container for Auto Scrolling Cards =============== -->
+           
           <div class="swiper mySwiper2 w-full flex justify-center items-center px-4 mt-10 mx-5">
             <div class="swiper-wrapper">
                 <!-- Card 1 -->
@@ -179,55 +178,48 @@
             </div>
         </div>
 
-
-
-
-<!-- Include Swiper's JS -->
-
-
-
-
-    <!-- ======================== item list End ========================= -->
+    <!-- ========================   Swiper Container  ========================= -->
 
     
-
       
-  
     <div class="w-full mt-52 h-[100px] bg-gray-200"></div>
 
 
+    
     <script src="main.js"></script>
-    <!-- swaper script -->
+    
+    <!-- swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper1", {
-          loop: true,
-          autoplay: { delay: 3000 },
-          pagination: { el: ".swiper-pagination", clickable: true },
-          navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
-        });
+            // 1st swiper script
+             var swiper = new Swiper(".mySwiper1", {
+                        loop: true,
+                        autoplay: { delay: 3000 },
+                        pagination: { el: ".swiper-pagination", clickable: true },
+                        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+                        });
      
-           
-        // script>
-        var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 1, // Default (Mobile: 1 card)
-    spaceBetween: 10, 
-    autoplay: {        
-      delay: 2500,     
-      disableOnInteraction: false
-    },
-    breakpoints: {  
-      768: { // Tablet & Up (768px+)
-        slidesPerView: 2,
-      },
-      1024: { // Desktop & Up (1024px+)
-        slidesPerView: 4,
-      }
-    },
-    loop: true, 
-  });
-        </script>
+            // 2nd swiper script
+             var swiper2 = new Swiper(".mySwiper2", {
+                                slidesPerView: 1, // Default (Mobile: 1 card)
+                                spaceBetween: 10, 
+                                autoplay: {        
+                                delay: 2500,     
+                                disableOnInteraction: false
+                                },
+                                breakpoints: {  
+                                768: { // Tablet & Up (768px+)
+                                    slidesPerView: 2,
+                                },
+                                1024: { // Desktop & Up (1024px+)
+                                    slidesPerView: 4,
+                                }
+                                },
+                                loop: true, 
+                            });
+    
+    </script>
       
 </body>
 </html>
