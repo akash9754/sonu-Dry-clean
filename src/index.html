@@ -70,9 +70,9 @@
           </div>
         </div>
         <!-- Navigation buttons -->
-        <div class="swiper-button-next !text-white"></div>
+        <!-- <div class="swiper-button-next !text-white"></div>
         <div class="swiper-button-prev !text-white"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div> -->
       </div>
       
       
@@ -194,7 +194,69 @@
     <!-- ========================   Swiper Container  ========================= -->
 
 
-    <!-- =========================  Question/Answer section section ============================== -->
+    <!-- =========================  blog section =========================== -->
+            <div class="max-w-6xl mx-auto p-6">
+                <h2 class="text-3xl font-bold text-center mb-6">Latest Blog Posts</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center items-center">
+                    <!-- Blog Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/9413730/pexels-photo-9413730.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="w-full h-40 object-cover" alt="Blog Image">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold">Eco-Friendly Cleaning</h3>
+                            <button class="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Read More</button>
+                        </div>
+                    </div>
+            
+                    <!-- Blog Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/28576643/pexels-photo-28576643/free-photo-of-person-wearing-yellow-cleaning-gloves-and-sponge.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-40 object-cover" alt="Blog Image">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold">Tips for Deep Cleaning</h3>
+                            <button class="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Read More</button>
+                        </div>
+                    </div>
+            
+                    <!-- Blog Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/6195949/pexels-photo-6195949.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="w-full h-40 object-cover" alt="Blog Image">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold">Keeping Your Home Fresh</h3>
+                            <button class="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Read More</button>
+                        </div>
+                    </div>
+            
+                    <!-- Blog Card 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden w-auto">
+                        <img src="https://images.pexels.com/photos/5591908/pexels-photo-5591908.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="w-full h-40 object-cover" alt="Blog Image">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold">Best Cleaning Services</h3>
+                            <button class="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Blog Card 5 -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hidden md:block">
+                            <img src="https://images.pexels.com/photos/9507284/pexels-photo-9507284.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="w-full h-40 object-cover" alt="Blog Image">
+                            <div class="p-4 text-center">
+                                <h3 class="text-lg font-semibold">Professional Maid Services</h3>
+                                <button class="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Read More</button>
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 6 -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden hidden md:block">
+                            <img src="https://images.pexels.com/photos/4098916/pexels-photo-4098916.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="w-full h-40 object-cover" alt="Blog Image">
+                            <div class="p-4 text-center">
+                                <h3 class="text-lg font-semibold">Sanitization & Deep Cleaning</h3>
+                                <button class="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Read More</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    
+    <!-- =========================  blog section =========================== -->
+
+
+    <!-- =========================  Question/Answer section =========================== -->
 
     <div class="bg-gray-100 p-6">
         <div class="max-w-2xl mx-auto bg-white p-4 rounded-lg shadow-lg">
@@ -286,7 +348,7 @@
         </script>
     </div>
 
-    <!-- =========================  Question/Answer section section ============================== -->
+    <!-- =========================  Question/Answer section ========================== -->
 
 
     <!-- =========================  review section ================================== -->
@@ -338,7 +400,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- =========================  review section end ============================== -->
 
@@ -395,75 +456,18 @@
         </div>
     </footer>
     
-
     <!-- =========================  Footer section End =========================== -->
 
     
       <!-- empty container for devlopmen later remove -->
-    <div class="w-full mt-52 h-[100px] bg-gray-200"></div> 
+    <!-- <div class="w-full mt-52 h-[100px] bg-gray-200"></div>  -->
 
 
     <!--========================== Script part ================================  -->
-    <script src="script/main.js"></script>
-    
+    <script src="script/navResponsive.js"></script>
     <!-- swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-            // 1st swiper script
-             var swiper = new Swiper(".mySwiper1", {
-                        loop: true,
-                        autoplay: { delay: 3000 },
-                        pagination: { el: ".swiper-pagination", clickable: true },
-                        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
-                        });
-     
-            // 2nd swiper script
-             var swiper2 = new Swiper(".mySwiper2", {
-                                slidesPerView: 1, // Default (Mobile: 1 card)
-                                spaceBetween: 10, 
-                                autoplay: {        
-                                delay: 2500,     
-                                disableOnInteraction: false
-                                },
-                                breakpoints: {  
-                                768: { // Tablet & Up (768px+)
-                                    slidesPerView: 2,
-                                },
-                                1024: { // Desktop & Up (1024px+)
-                                    slidesPerView: 4,
-                                }
-                                },
-                                loop: true, 
-                            });
-    
-            // 3rd swiper
-            var reviewSwiper = new Swiper('.review-slider', {
-                                    loop: true,
-                                    autoplay: {
-                                        delay: 3000, // Auto-scroll every 3 seconds
-                                        disableOnInteraction: false // Keep autoplay after manual swipe
-                                    },
-                                    spaceBetween: 20,
-                                    slidesPerView: 1, // Default for mobile
-                                    grabCursor: true, // Makes it feel smoother
-                                    centeredSlides: true, // Ensures centered scrolling effect
-                                    breakpoints: {
-                                        640: { slidesPerView: 2 },  // Tablets
-                                        1024: { slidesPerView: 3 }, // Laptops
-                                        1280: { slidesPerView: 4 }  // Large Screens
-                                    },
-                                    navigation: {
-                                        nextEl: '.swiper-button-next',
-                                        prevEl: '.swiper-button-prev'
-                                    },
-                                    pagination: {
-                                        el: '.swiper-pagination',
-                                        clickable: true
-                                    }
-                                }); 
-
-    </script>
+    <script src="script/swiper.js"></script>
       
 </body>
 </html>
