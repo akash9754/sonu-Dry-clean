@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-lg mx-auto mt-10 bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Checkout</h2>
+        <form id="checkout-form">
+            <div class="mb-4">
+                <label class="block text-gray-700">Name</label>
+                <input type="text" id="customer-name" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Phone</label>
+                <input type="tel" id="customer-phone" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Address</label>
+                <textarea id="customer-address" class="w-full p-2 border border-gray-300 rounded mt-1" required></textarea>
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Cart Items</h3>
+            <ul id="cart-items" class="mb-4"></ul>
+            <p class="text-lg font-semibold">Total: <span id="total-price">0</span></p>
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 mt-4 rounded-lg">Place Order</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartItemsContainer = document.getElementById("cart-items");
+            const totalPriceElement = document.getElementById("total-price");
+            let total = 0;
+            
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = "<p class='text-gray-600'>No items in cart</p>";
+            } else {
+                cart.forEach(item => {
+                    const li = document.createElement("li");
+                    li.classList.add("border-b", "py-2");
+                    li.textContent = `${item.name} (x${item.quantity}) - ₹${item.price * item.quantity}`;
+                    cartItemsContainer.appendChild(li);
+                    total += item.price * item.quantity;
+                });
+            }
+            totalPriceElement.textContent = `₹${total}`;
+        });
+    </script>
+</body>
+</html>
