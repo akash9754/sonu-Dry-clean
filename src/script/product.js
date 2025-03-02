@@ -5,7 +5,7 @@ const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbzHyr5kbzxE2zhFTG
 async function fetchProductData(productId) {
 
     try {
-        const response = await fetch(`${SHEET_API_URL}?id=1`); //${productId}
+        const response = await fetch(`${SHEET_API_URL}?${productId}`); //${productId}
         const products = await response.json();
 
         if (products.length > 0) {
@@ -86,13 +86,14 @@ async function fetchProductData(productId) {
 }
 
 // Extract product ID from URL parameters (e.g., ?product=123)
+
 // const urlParams = new URLSearchParams(window.location.search);
-// const productId = urlParams.get("product");
-const productId = 1;
+// const productId = urlParams.get("id");
+// const productId = 1;
 
 // If product ID exists, fetch its data
 // if (productId) {
-    fetchProductData(productId);
+    fetchProductData(2);
 // } else {
 //     console.error("No product ID provided in URL");
 // }
