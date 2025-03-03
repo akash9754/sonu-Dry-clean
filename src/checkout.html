@@ -25,30 +25,32 @@
             <h3 class="text-xl font-semibold mt-4">Cart Items</h3>
             <ul id="cart-items" class="mb-4"></ul>
             <p class="text-lg font-semibold">Total: <span id="total-price">0</span></p>
-            <button type="submit" class="w-full bg-blue-600 text-white p-2 mt-4 rounded-lg">Place Order</button>
+            <!-- <button id="checkout-button" type="button" onclick="checkout()">Checkout</button> -->
+            <button type="button" onclick="sendOrderToGoogleSheets()"  class="w-full bg-blue-600 text-white p-2 mt-4 rounded-lg">Place Order</button>
         </form>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const cart = JSON.parse(localStorage.getItem("cart")) || [];
-            const cartItemsContainer = document.getElementById("cart-items");
-            const totalPriceElement = document.getElementById("total-price");
-            let total = 0;
+        // document.addEventListener("DOMContentLoaded", function() { 
+        //     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        //     const cartItemsContainer = document.getElementById("cart-items");
+        //     const totalPriceElement = document.getElementById("total-price");
+        //     let total = 0;
             
-            if (cart.length === 0) {
-                cartItemsContainer.innerHTML = "<p class='text-gray-600'>No items in cart</p>";
-            } else {
-                cart.forEach(item => {
-                    const li = document.createElement("li");
-                    li.classList.add("border-b", "py-2");
-                    li.textContent = `${item.name} (x${item.quantity}) - ₹${item.price * item.quantity}`;
-                    cartItemsContainer.appendChild(li);
-                    total += item.price * item.quantity;
-                });
-            }
-            totalPriceElement.textContent = `₹${total}`;
-        });
+        //     if (cart.length === 0) {
+        //         cartItemsContainer.innerHTML = "<p class='text-gray-600'>No items in cart</p>";
+        //     } else {
+        //         cart.forEach(item => {
+        //             const li = document.createElement("li");
+        //             li.classList.add("border-b", "py-2");
+        //             li.textContent = `${item.name} (x${item.quantity}) - ₹${item.price * item.quantity}`;
+        //             cartItemsContainer.appendChild(li);
+        //             total += item.price * item.quantity;
+        //         });
+        //     }
+        //     totalPriceElement.textContent = `₹${total}`;
+        // });
     </script>
+    <script src="./script/checkout.js" defer></script>
 </body>
 </html>
