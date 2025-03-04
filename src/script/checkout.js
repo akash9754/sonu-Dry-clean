@@ -276,30 +276,39 @@
             });
         }
         totalPriceElement.textContent = `₹${total}`;
+
+        let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        // const totalPrice = total; // Use the calculated total
+
+        function openGoogleForm() {
+          // let mydata = "CustomValue"; // Set your predefined value here
+          let url = `https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(cartItems)}`;
+          window.location.href = url; // Redirect to the Google Form
+      }
     
-        document.getElementById('orderForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+        // document.getElementById('orderForm').addEventListener('submit', function(event) {
+        //     event.preventDefault(); // Prevent default form submission
     
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const address = document.getElementById('address').value;
+            // const name = document.getElementById('name').value;
+            // const phone = document.getElementById('phone').value;
+            // const address = document.getElementById('address').value;
     
             // Use cart items from local storage
-            const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-            const totalPrice = total; // Use the calculated total
+           
     
-            const orderData = {
-                name: name,
-                phone: phone,
-                address: address,
-                cartItems: cartItems,
-                totalPrice: totalPrice
-            };
+            // const orderData = {
+            //     name: name,
+            //     phone: phone,
+            //     address: address,
+            //     cartItems: cartItems,
+            //     totalPrice: totalPrice
+            // };
     
-            sendOrderToGoogleSheets(orderData);
+            // sendOrderToGoogleSheets(orderData);
         });
-    });
-    
+    // });
+  
+    // https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=cart_Item_pre_Filled
 
     // async function sendOrderToGoogleSheets(orderData) {
     //     const scriptURL = "https://script.google.com/macros/s/AKfycbz93FBEFBINfUdi1cNsTfOSCJZhdGRTxo3kTZ0eNhR2hucSD0Fo5W8CVWLXvtn4GfbGKw/exec"; // Replace with your deployed script URL 
@@ -356,35 +365,35 @@
 
     
 
-    const orderData = {
-        name: "akash",
-        phone: "5645621865",
-        address: "tejhsj kkuhvjyrfy jhfuh",
-        cartItems: ["item1", "item2"],
-        totalPrice: "895",
-      };
+    // const orderData = {
+    //     name: "akash",
+    //     phone: "5645621865",
+    //     address: "tejhsj kkuhvjyrfy jhfuh",
+    //     cartItems: ["item1", "item2"],
+    //     totalPrice: "895",
+    //   };
       
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzvjb-wTA1Whm01oc7EZtD_1h5pzVeemui0o5B1TtfwsgTchbBnG-j2Kc-BWfSO6k-yNw/exec"; // Replace with your Web App URL
+    //   const scriptURL = "https://script.google.com/macros/s/AKfycbzvjb-wTA1Whm01oc7EZtD_1h5pzVeemui0o5B1TtfwsgTchbBnG-j2Kc-BWfSO6k-yNw/exec"; // Replace with your Web App URL
       
-      fetch(scriptURL, {
-        method: "POST", 
-        mode: 'cors',
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(orderData),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.result === "success") {
-            console.log("Data successfully sent to Google Sheet!");
-            // Optionally, display a success message to the user
-          } else {
-            console.error("Error sending data:", data.error);
-            // Optionally, display an error message to the user
-          }
-        })
-        .catch((error) => {
-          console.error("Fetch error:", error);
-          // Optionally, display an error message to the user
-        });
+    //   fetch(scriptURL, {
+    //     method: "POST", 
+    //     mode: 'cors',
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(orderData),
+    //   })
+    //     .then((response) => response.json())
+    //     .then((data) => {
+    //       if (data.result === "success") {
+    //         console.log("Data successfully sent to Google Sheet!");
+    //         // Optionally, display a success message to the user
+    //       } else {
+    //         console.error("Error sending data:", data.error);
+    //         // Optionally, display an error message to the user
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       console.error("Fetch error:", error);
+    //       // Optionally, display an error message to the user
+    //     });

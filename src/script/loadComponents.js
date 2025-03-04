@@ -8,6 +8,6 @@ function loadComponent(id, file) {
 
 // Load components dynamically
 window.onload = function () {
-    loadComponent("navbar", "component/navbar.html");
-    loadComponent("footer", "component/footer.html");
+    loadComponent("navbar", "./navbar.html");
+    loadComponent("footer", "./footer.html");
 };
