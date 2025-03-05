@@ -5,18 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     
-    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-    <div id="navbar"></div>  <!-- Navbar will be inserted here -->
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold text-blue-600">Sonu Dry Cleaning Service</h1>
+            <nav>
+                <ul class="flex space-x-4 text-gray-700">
+                    <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-500 font-semibold">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main class="p-6">
-        <h1>Welcome to My Website</h1>
-        <p>This is the about page.</p>
-    </main>
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center py-16 px-6">
+        <h2 class="text-3xl md:text-4xl font-bold">Welcome to Sonu Dry Cleaning Service!</h2>
+        <p class="mt-4 text-lg">Providing top-quality cleaning services for homes and businesses.</p>
+        <a href="https://wa.me/918817366188" target="_blank" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition">
+            Get a Free Quote
+        </a>
+        
+    </section>
 
-    <div id="footer"></div>  <!-- Footer will be inserted here -->
-    <script defer src="./script/loadComponents.js"></script> 
+    <!-- Our Story -->
+    <section class="py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Sonu Dry Cleaning Service was founded with a simple mission: to make cleaning effortless for our customers.
+                Over the years, we have built a reputation for reliability, efficiency, and top-notch service.
+                Whether it's your home or business, we ensure spotless spaces with our professional cleaning solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us? -->
+    <section class="bg-gray-100 py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
+            <div class="grid gap-6 md:grid-cols-2 text-left">
+                <div class="flex items-start space-x-3">
+                    <span class="text-green-500 text-2xl">✅</span>
+                    <p class="text-gray-700"><strong>Experienced and Trustworthy Team</strong> – Our cleaners are vetted, trained, and committed to quality service.</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <span class="text-green-500 text-2xl">✅</span>
+                    <p class="text-gray-700"><strong>Reliable and Punctual</strong> – We respect your time and always arrive on schedule.</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <span class="text-green-500 text-2xl">✅</span>
+                    <p class="text-gray-700"><strong>Eco-Friendly Options</strong> – Green cleaning products available on request.</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <span class="text-green-500 text-2xl">✅</span>
+                    <p class="text-gray-700"><strong>Satisfaction Guaranteed</strong> – We’re not happy until you are!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">What We Offer</h2>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 text-left">
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Bathroom Cleaning</h3>
+                    <p class="text-gray-600">Deep cleaning and sanitization of bathrooms.</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Room Dusting</h3>
+                    <p class="text-gray-600">Keep your home dust-free and fresh.</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">AC Cleaning</h3>
+                    <p class="text-gray-600">Efficient AC cleaning for better performance.</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Water Tank Cleaning</h3>
+                    <p class="text-gray-600">Ensure clean and safe water storage.</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Deep Cleaning</h3>
+                    <p class="text-gray-600">Thorough cleaning for a spotless home or office.</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Move-in/Move-out Cleaning</h3>
+                    <p class="text-gray-600">Leave your old or new home sparkling clean.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-blue-600 text-white text-center py-16 px-6">
+        <h2 class="text-3xl font-bold">Ready to Experience the Difference?</h2>
+        <p class="mt-4 text-lg">Contact us today and let us handle the cleaning for you.</p>
+        <a href="#" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition">
+            Contact Us Today
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 Sonu Dry Cleaning Service. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
