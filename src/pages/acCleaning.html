@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Submission</title>
+    <script>
+        async function submitOrder() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            if (!name || !phone || !address || cart.length === 0) {
+                alert("Please fill all fields and ensure the cart is not empty.");
+                return;
+            }
+            
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const orderData = { name, phone, address, cartItems: cart, totalPrice };
+            
+            try {
+                const response = await fetch("https://script.google.com/macros/s/AKfycbwCQPUIgJdtSNqbCfH7pmXxw3nXQdBtG6eqNga--qsP5h3gOmuOksa1pCHVJzTocVH2/exec", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(orderData)
+                });
+                
+                const result = await response.json();
+                if (result.success) {
+                    alert("Order placed successfully!");
+                    localStorage.removeItem('cart'); // Clear cart after order submission
+                } else {
+                    alert("Error placing order: " + result.error);
+                }
+            } catch (error) {
+                console.error("Error submitting order:", error);
+                alert("Failed to submit order. Please try again later.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Order Form</h2>
+    <label>Name: <input type="text" id="name"></label><br>
+    <label>Phone: <input type="text" id="phone"></label><br>
+    <label>Address: <input type="text" id="address"></label><br>
+    <button onclick="submitOrder()">Submit Order</button>
+</body>
+</html>
