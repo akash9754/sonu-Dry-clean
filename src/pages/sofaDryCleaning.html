@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofa Dry Cleaning Services</title>
+    <link href="../output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+     <!-- ======================== Navbar Start ========================= -->
+
+     <div class="flex h-16 mt-3 mx-5 justify-between items-center">
+        <!-- Logo -->
+        <img src="../img/logo.webp" class="w-14 h-14" alt="logo">
+
+        <!-- Desktop Menu (Hidden on Mobile) -->
+        <div class="hidden md:flex text-lg items-center space-x-4">
+            <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Home</a>
+            <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Browse Menu</a>
+            <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Special Offers</a>
+            <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="Restaurant.html">Restaurants</a>
+            <a class="hover:bg-orange-500 hover:rounded-full py-2 px-3 font-normal hover:text-white" href="#">Track Order</a>
+        </div>
+
+        <!-- Login/Signup (Hidden on Mobile) -->
+        <button class="hidden md:flex h-12 w-48 text-lg justify-center items-center  bg-slate-950 text-white rounded-full p-2">
+            <img src="../img/Male User.png" class="w-8 h-7" alt="">
+            <p>Login/Signup</p>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-3xl">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="hidden flex-col items-center space-y-4 p-5 bg-white shadow-lg mt-2 md:hidden">
+        <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Home</a>
+        <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Browse Menu</a>
+        <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Special Offers</a>
+        <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="Restaurant.html">Restaurants</a>
+        <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="#">Track Order</a>
+        <button class="h-12 w-48 text-lg bg-slate-950 text-white rounded-full p-2 flex items-center justify-center">
+            <img src="../img/Male User.png" class="w-8 h-7" alt="">
+            <p>Login/Signup</p>
+        </button>
+    </div>
+
+<!-- ======================== Navbar End ========================= -->
+   
+    <div class="container mx-auto my-5 p-4"> 
+        <div class="flex flex-col md:flex-row gap-4">
+            <!-- Product List -->
+            <div class="w-full md:w-3/4">
+                <h2 class="text-xl font-semibold mb-4">Bathroom Cleaning</h2>
+                <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Products will be inserted here dynamically -->
+                </div>
+            </div>
+            
+            <!-- Cart Section -->
+            <div class="w-full md:w-1/4 hidden md:block bg-slate-200 p-4 shadow rounded fixed md:static right-4 bottom-16" id="cart-section">
+                <h2 class="text-xl font-semibold mb-4">Cart</h2>
+                <div id="cart" class="space-y-2">
+                    <p class="text-gray-500">No items in your cart</p>
+                </div>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-2 rounded mt-4 w-full hidden" onclick="openGoogleForm()">Book an Appointment</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Cart Icon shifted with WhatsApp app -->
+    <!-- <div class="fixed bottom-4 right-4 md:hidden">
+        <button class="bg-purple-600 text-white p-3 rounded-full shadow" onclick="toggleCart()">🛒</button>
+    </div> -->
+
+    <!-- deatils and description section -->
+
+    <section id="details-section" class="container mx-auto p-4 mt-6 bg-white shadow rounded">
+        <h2 class="text-xl font-semibold">What’s Included and Excluded</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="bg-green-100 p-4 rounded">
+                <h3 class="text-lg font-semibold">Included</h3>
+                <ul class="list-disc pl-4">
+                    <li>Deep cleaning of floors and walls</li>
+                    <li>Removal of yellow stains</li>
+                    <li>Scrubbing machine usage</li>
+                </ul>
+            </div>
+            <div class="bg-red-100 p-4 rounded">
+                <h3 class="text-lg font-semibold">Excluded</h3>
+                <ul class="list-disc pl-4">
+                    <li>Pipe cleaning</li>
+                    <li>Ceiling cleaning</li>
+                    <li>Exterior wall cleaning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison-section" class="container mx-auto p-4 mt-6 bg-white shadow rounded">
+        <h2 class="text-xl font-semibold">Classic vs Intense Cleaning</h2>
+        <table class="table-auto w-full mt-4 border-collapse border border-gray-200">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="border p-2">Feature</th>
+                    <th class="border p-2">Classic Cleaning</th>
+                    <th class="border p-2">Intense Cleaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border p-2">Scrubbing Machine</td>
+                    <td class="border p-2">Yes</td>
+                    <td class="border p-2">Yes</td>
+                </tr>
+                <tr>
+                    <td class="border p-2">Stain Type</td>
+                    <td class="border p-2">Moderate</td>
+                    <td class="border p-2">High</td>
+                </tr>
+                <tr>
+                    <td class="border p-2">Stain Removal</td>
+                    <td class="border p-2">Yellow stains</td>
+                    <td class="border p-2">Salt water stains, corners & gaps</td>
+                </tr>
+                <tr>
+                    <td class="border p-2">Shine</td>
+                    <td class="border p-2">Moderate</td>
+                    <td class="border p-2">High</td>
+                </tr>
+                <tr>
+                    <td class="border p-2">Suitable Frequency</td>
+                    <td class="border p-2">Monthly</td>
+                    <td class="border p-2">Every 2-3 months</td>
+                </tr>
+                <tr>
+                    <td class="border p-2">Duration</td>
+                    <td class="border p-2">45 min per bathroom</td>
+                    <td class="border p-2">45 min per bathroom</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="faq-section" class="container mx-auto p-4 mt-6 bg-white shadow rounded">
+        <h2 class="text-xl font-semibold">Frequently Asked Questions</h2>
+        <div class="mt-4">
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(1)">Will I have to provide any chemicals/ cleaning agents? <span id="icon1">👉</span></button>
+            <div id="faq1" class="hidden p-3 bg-gray-50">No, our professionals carry all chemicals and equipment required for the service. </div>
+            
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(2)">Which chemicals will be used during bathroom cleaning? <span id="icon2">👉</span></button>
+            <div id="faq2" class="hidden p-3 bg-gray-50">The two main chemicals used are SwipePro Bathroom cleaner and Diversey Suma Multi.</div>
+            
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(3)">What will happen if there's no electricity at my home during the service? <span id="icon3">👉</span></button>
+            <div id="faq3" class="hidden p-3 bg-gray-50">In such cases, customers can get the service rescheduled with the help of our customer care.</div>
+            
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(4)">Will the professionals follow all safety measures? <span id="icon4">👉</span></button>
+            <div id="faq4" class="hidden p-3 bg-gray-50">Yes. Our professionals will take all the necessary measures like social distancing, wearing a mask, etc.</div>
+            
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(5)">How frequently should I book this Service? <span id="icon5">👉</span></button>
+            <div id="faq5" class="hidden p-3 bg-gray-50">You should ideally book this service once every month for a clean and hygienic bathroom.</div>
+            
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(6)">My bathroom & toilet are in two separate areas, will both be covered? <span id="icon6">👉</span></button>
+            <div id="faq6" class="hidden p-3 bg-gray-50">Yes, both areas will be cleaned</div>
+        </div>
+    </section>
+
+     <!-- WhatsApp Icon -->
+     <div class="fixed bottom-6 right-6 flex flex-col items-center gap-4">
+
+            <a href="https://wa.me/918817366188?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Can%20you%20help%20me%3F"
+            class="bg-green-500 hover:bg-green-600 transition flex items-center justify-center 
+                    w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg"
+            target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" class="w-8 h-8 sm:w-10 sm:h-10">
+        </a>
+
+        <button class="bg-purple-600 text-white p-3 rounded-full shadow md:hidden" onclick="toggleCart()">🛒</button>
+        </div>
+
+     <!-- =========================  Footer section ============================== -->
+
+    <footer class="bg-gray-900 text-white mt-5 py-10">
+        <div class="container mx-auto px-6 lg:px-20">
+            <!-- Footer Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
+                
+                <!-- Logo & About -->
+                <div>
+                    <img src="../img/logo.webp" alt="Company Logo" class="mx-auto sm:mx-0 w-28 h-auto">
+                    <p class="mt-4 text-gray-400 text-sm">
+                        Providing top-notch cleaning services with expert professionals. We ensure cleanliness and hygiene at its best.
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-orange-400">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">Services</a></li>
+                        <li><a href="../aboutUs.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="../pages/privacyPolicy.html" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="../pages/termsAndConditions.html" class="hover:text-white">Terms And Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Our Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-orange-400">Our Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Home Cleaning</a></li>
+                        <li><a href="#" class="hover:text-white">Sofa Cleaning</a></li>
+                        <li><a href="#" class="hover:text-white">Water Tank Cleaning</a></li>
+                        <li><a href="#" class="hover:text-white">Carpet Cleaning</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div>
+                    <!-- <h3 class="text-lg font-semibold mb-3 text-orange-400">Contact Us</h3>
+                    <p class="text-gray-400 text-sm">📍 123 Clean Street, City</p>
+                    <p class="text-gray-400 text-sm">📧 contact@cleaningservice.com</p>
+                    <p class="text-gray-400 text-sm">📞 +123 456 7890</p> -->
+              
+                        <h3 class="text-lg font-semibold mb-3 text-orange-400">Contact Us</h3>
+                        
+                         <!-- Email Link -->
+                         <p class="text-gray-400 text-sm my-3"> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cleannestsolutions3100@gmail.com" target="_blank"
+                class="text-gray-400 my-3 mb-3 text-sm">
+                 📧 Send Email: cleannestsolutions3100@gmail.com
+             </a> </p>
+        
+             <!-- Phone Call Link -->
+             <p class="text-gray-400 text-sm my-3">
+             <a href="tel:+918817366188"
+                class="text-gray-400 text-sm my-3">
+                 📞 Call: +91 8817366188
+             </a></p>
+        
+             <!-- Google Maps Link -->
+             <p class="text-gray-400 text-sm my-3">
+             <a href="https://g.page/r/CbAoxnAm_Z57EBE/"   target="_blank"
+                class="text-gray-400 text-sm py-4">
+                🏠  Address: <br> Mandakini Colony, Kolar Rd, Bhopal, Madhya Pradesh 462042
+             </a></p>
+        
+             
+                   
+                </div>
+            </div>
+    
+            <!-- Copyright Section -->
+            <div class="mt-10 border-t border-gray-700 pt-5 text-center text-gray-400 text-sm">
+                &copy; 2025 Sonu Rey Cleaning. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- =========================  Footer section End =========================== -->
+   
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        function loadProducts() {
+            const products = [
+                { productId: 101, productName: "Classic Cleaning (1 Bathroom)", productImage: "../img/classicBathroom.webp", price: 342, oldPrice: 400, type: "Bathroom Cleaning", description: "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." },
+                { productId: 102, productName: "Classic Cleaning (2 Bathrooms)", productImage: "../img/classic2Bathroom.webp", price: 614, oldPrice: 684, type: "Bathroom Cleaning", description: "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." },
+                { productId: 103, productName: "Classic Cleaning (3 Bathrooms)", productImage: "../img/classic3Bathroom.webp", price: 854, oldPrice: 1026, type: "Bathroom Cleaning", description: "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." },
+                { productId: 104, productName: "Intense Cleaning (1 Bathroom)", productImage: "../img/intenseBathroom.webp", price: 519, oldPrice: 550, type: "Bathroom Cleaning", description: "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom." },
+                { productId: 105, productName: "Intense Cleaning (2 Bathrooms)", productImage: "../img/intense2Bathroom.webp", price: 950, oldPrice: 1030, type: "Bathroom Cleaning", description: "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom." },
+                { productId: 106, productName: "Intense Cleaning (3 Bathrooms)", productImage: "../img/intense3Bathroom.webp", price: 1349, oldPrice: 1557, type: "Bathroom Cleaning", description: "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom." }
+            ];
+            
+            const productList = document.getElementById("product-list");
+            productList.innerHTML = "";
+            
+            products.forEach(product => {
+                productList.innerHTML += `
+                    <div class="bg-white p-4 shadow rounded text-center">
+                        <img src="${product.productImage}" alt="${product.productName}" class="w-full h-40 md:object-cover object-center rounded">
+                        <h3 class="text-lg font-semibold mt-2">${product.productName}</h3>
+                        <p class="text-green-500">₹${product.price} <span class="line-through text-sm text-red-400">₹${product.oldPrice}</span></p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2" 
+                            onclick="addToCart(${product.productId}, '${product.productName}', ${product.price})">Add To Cart</button>
+                    </div>`;
+            });
+        }
+        
+        function addToCart(id, name, price) {
+            const existingItem = cart.find(item => item.id === id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ id, name, price, quantity: 1 });
+            }
+            saveCart();
+            updateCart();
+        }
+        
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            saveCart();
+            updateCart();
+        }
+        
+        function updateCart() {
+            const cartSection = document.getElementById("cart");
+            const checkoutBtn = document.getElementById("checkout-btn");
+            cartSection.innerHTML = cart.length ? "" : "<p class='text-gray-500'>No items in your cart</p>";
+            
+            cart.forEach(item => {
+                cartSection.innerHTML += `
+                    <div class="flex items-center justify-between bg-gray-100 p-3 rounded shadow-md">
+                        <div class="flex-1">
+                            <h3 class="text-sm font-semibold">${item.name}</h3>
+                            <p class="text-xs text-gray-600">₹${item.price} (x${item.quantity})</p>
+                        </div>
+                        <button class="bg-red-500 text-white px-2 py-1 text-xs rounded" 
+                            onclick="removeFromCart(${item.id})">Remove</button>
+                    </div>`;
+            });
+            
+            checkoutBtn.classList.toggle("hidden", cart.length === 0);
+        }
+        
+        function saveCart() {
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+        
+        function toggleCart() {
+            const cartSection = document.getElementById("cart-section");
+            cartSection.classList.toggle("hidden");
+        }
+        
+        function proceedToCheckout() {
+            if (cart.length > 0) {
+                window.location.href = "checkout.html";
+            } else {
+                alert("Your cart is empty!");
+            }
+        }
+        
+        window.onload = function () {
+            loadProducts();
+            updateCart();
+        };
+
+        function toggleFAQ(id) {
+            const faq = document.getElementById(`faq${id}`);
+            const icon = document.getElementById(`icon${id}`);
+            faq.classList.toggle("hidden");
+            icon.textContent = faq.classList.contains("hidden") ? "👉" : "👇";
+        }
+    </script>
+    <script src="../script/navResponsive.js"></script>
+    <script>
+        function openGoogleForm() {
+            let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Convert cartItems array into a readable text format (comma-separated names)
+            let formattedData = cartItems.map(item => {
+                return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
+            }).join(", ");
+
+            // Construct the Google Form URL with encoded data
+            let url = `https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(formattedData)}`;
+
+            window.location.href = url; // Redirect to the Google Form
+}       
+    </script>
+
+</body>
+</html>
