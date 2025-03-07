@@ -269,12 +269,11 @@
         
         function loadProducts() {
             const products = [
-                { productId: 101, productName: "Classic Cleaning (1 Bathroom)", productImage: "../img/classicBathroom.webp", price: 342, oldPrice: 400, type: "Bathroom Cleaning", description: "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." },
-                { productId: 102, productName: "Classic Cleaning (2 Bathrooms)", productImage: "../img/classic2Bathroom.webp", price: 614, oldPrice: 684, type: "Bathroom Cleaning", description: "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." },
-                { productId: 103, productName: "Classic Cleaning (3 Bathrooms)", productImage: "../img/classic3Bathroom.webp", price: 854, oldPrice: 1026, type: "Bathroom Cleaning", description: "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." },
-                { productId: 104, productName: "Intense Cleaning (1 Bathroom)", productImage: "../img/intenseBathroom.webp", price: 519, oldPrice: 550, type: "Bathroom Cleaning", description: "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom." },
-                { productId: 105, productName: "Intense Cleaning (2 Bathrooms)", productImage: "../img/intense2Bathroom.webp", price: 950, oldPrice: 1030, type: "Bathroom Cleaning", description: "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom." },
-                { productId: 106, productName: "Intense Cleaning (3 Bathrooms)", productImage: "../img/intense3Bathroom.webp", price: 1349, oldPrice: 1557, type: "Bathroom Cleaning", description: "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom." }
+                { productId: 121, productName: "Single Sitting Sofa Cleaning", productImage: "../img/singleSofaCleaning.webp", price: 170, oldPrice: null, type: "Sofa Cleaning", description: "Dry vacuuming, shampooing, wet vacuuming, drying. Excludes additional settings." },
+                { productId: 122, productName: "Minimum 5 Sitting Sofa Cleaning", productImage: "../img/fiveSofaCleaning.webp", price: 850, oldPrice: null, type: "Sofa Cleaning", description: "Dry vacuuming, shampooing, wet vacuuming, drying. Includes up to 5 settings." },
+                { productId: 123, productName: "Additional Setting (Beyond 5)", productImage: "../img/SofaCleaning.webp", price: 150, oldPrice: null, type: "Sofa Cleaning", description: "Additional cost per setting beyond the initial 5 settings." },
+                { productId: 128, productName: "Single Bed Mattress Cleaning", productImage: "../img/singleMattressCleaning.webp", price: 450, oldPrice: null, type: "Mattress Cleaning", description: "Dry dusting, dry vacuuming, shampooing, wet vacuuming, drying. Excludes ink stain removal." },
+                { productId: 129, productName: "Double Bed Mattress Cleaning", productImage: "../img/doubleMattresCleaning.webp", price: 650, oldPrice: null, type: "Mattress Cleaning", description: "Dry dusting, dry vacuuming, shampooing, wet vacuuming, drying. Excludes ink stain removal." }
             ];
             
             const productList = document.getElementById("product-list");
