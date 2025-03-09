@@ -55,7 +55,7 @@
         <div class="flex flex-col md:flex-row gap-4">
             <!-- Product List -->
             <div class="w-full md:w-3/4">
-                <h2 class="text-xl font-semibold mb-4">Bathroom Cleaning</h2>
+                <h2 class="text-xl font-semibold mb-4">Sofa & Dry Cleaning</h2>
                 <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <!-- Products will be inserted here dynamically -->
                 </div>
@@ -72,10 +72,7 @@
         </div>
     </div>
     
-    <!-- Mobile Cart Icon shifted with WhatsApp app -->
-    <!-- <div class="fixed bottom-4 right-4 md:hidden">
-        <button class="bg-purple-600 text-white p-3 rounded-full shadow" onclick="toggleCart()">🛒</button>
-    </div> -->
+
 
     <!-- deatils and description section -->
 
@@ -85,23 +82,23 @@
             <div class="bg-green-100 p-4 rounded">
                 <h3 class="text-lg font-semibold">Included</h3>
                 <ul class="list-disc pl-4">
-                    <li>Deep cleaning of floors and walls</li>
-                    <li>Removal of yellow stains</li>
-                    <li>Scrubbing machine usage</li>
+                    <li><h3 class="font-medium">Dry vacuuming</h3> <p class="font-light">Removal of accumulated dust, dirt from all surfaces and corners of sofa and cushions</p></li>
+                    <li><h3 class="font-medium">Shampooing</h3> <p class="font-light">Foam based shampoo application on sofa's fabric and cushion covers using a sponge</p></li>
+                    <li><h3 class="font-medium">Wet Vacuuming</h3> <p class="font-light">Cleaning the shampoo by vaccuming and wiping the water using microfibre cloth</p></li>
+                    
                 </ul>
             </div>
             <div class="bg-red-100 p-4 rounded">
                 <h3 class="text-lg font-semibold">Excluded</h3>
                 <ul class="list-disc pl-4">
-                    <li>Pipe cleaning</li>
-                    <li>Ceiling cleaning</li>
-                    <li>Exterior wall cleaning</li>
+                    <li>Complete removal of ink stain</li>
+                    <li>Wet shampooing of leather/ rexine/ wooden sofa</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="comparison-section" class="container mx-auto p-4 mt-6 bg-white shadow rounded">
+    <!-- <section id="comparison-section" class="container mx-auto p-4 mt-6 bg-white shadow rounded">
         <h2 class="text-xl font-semibold">Classic vs Intense Cleaning</h2>
         <table class="table-auto w-full mt-4 border-collapse border border-gray-200">
             <thead>
@@ -144,28 +141,29 @@
                 </tr>
             </tbody>
         </table>
-    </section>
+    </section> -->
 
     <section id="faq-section" class="container mx-auto p-4 mt-6 bg-white shadow rounded">
         <h2 class="text-xl font-semibold">Frequently Asked Questions</h2>
         <div class="mt-4">
-            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(1)">Will I have to provide any chemicals/ cleaning agents? <span id="icon1">👉</span></button>
-            <div id="faq1" class="hidden p-3 bg-gray-50">No, our professionals carry all chemicals and equipment required for the service. </div>
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(1)">Is this service applicable for all types of sofa? <span id="icon1">👉</span></button>
+            <div id="faq1" class="hidden p-3 bg-gray-50">Yes, this service is applicable for all types of sofa. Our professionals carry out the necessary steps depending on the sofa's material. </div>
             
-            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(2)">Which chemicals will be used during bathroom cleaning? <span id="icon2">👉</span></button>
-            <div id="faq2" class="hidden p-3 bg-gray-50">The two main chemicals used are SwipePro Bathroom cleaner and Diversey Suma Multi.</div>
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(2)">Will this service include hard to reach areas like back and bottom of the sofa. cervices, etc.? <span id="icon2">👉</span></button>
+            <div id="faq2" class="hidden p-3 bg-gray-50">Yes this service included the back, bottom and all hard to reach araes of sofa for throrough cleaning. </div>
             
-            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(3)">What will happen if there's no electricity at my home during the service? <span id="icon3">👉</span></button>
-            <div id="faq3" class="hidden p-3 bg-gray-50">In such cases, customers can get the service rescheduled with the help of our customer care.</div>
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(3)">Will the professionals follow all safety measures? <span id="icon3">👉</span></button>
+            <div id="faq3" class="hidden p-3 bg-gray-50">Yes. Our professionals will take all the necessary measures like social distancing, wearing a mask, etc.</div>
             
-            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(4)">Will the professionals follow all safety measures? <span id="icon4">👉</span></button>
-            <div id="faq4" class="hidden p-3 bg-gray-50">Yes. Our professionals will take all the necessary measures like social distancing, wearing a mask, etc.</div>
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(4)">Will this service damage my sofa set? <span id="icon4">👉</span></button>
+            <div id="faq4" class="hidden p-3 bg-gray-50">No, Our professionals our trained to take utmost care of the customer's belongings while delivering their service.</div>
             
-            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(5)">How frequently should I book this Service? <span id="icon5">👉</span></button>
-            <div id="faq5" class="hidden p-3 bg-gray-50">You should ideally book this service once every month for a clean and hygienic bathroom.</div>
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(5)">What will happen if there's no electricity at my home during the service? <span id="icon5">👉</span></button>
+            <div id="faq5" class="hidden p-3 bg-gray-50">In such cases, customers can get the service rescheduled with the help of Urban Company's customer care.</div>
             
-            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(6)">My bathroom & toilet are in two separate areas, will both be covered? <span id="icon6">👉</span></button>
-            <div id="faq6" class="hidden p-3 bg-gray-50">Yes, both areas will be cleaned</div>
+            <button class="w-full text-left p-3 bg-gray-100 border-b flex justify-between" onclick="toggleFAQ(5)">Is there anything I need to do after the service? <span id="icon5">👉</span></button>
+            <div id="faq5" class="hidden p-3 bg-gray-50">Please leave your sofa under the fan for 4-5 hours or more (depending on your sofa's fabric) for drying before use.</div>
+            
         </div>
     </section>
 

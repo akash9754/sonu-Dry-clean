@@ -1,0 +1,145 @@
+[
+    {
+        "productId": 101,
+        "productName": "Classic Cleaning (1 Bathroom)",
+        "productImage": "../img/classicBathroom.webp",
+        "price": 342,
+        "oldPrice": 400,
+        "type": "Bathroom Cleaning",
+        "description": "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom.",
+        "included": "Scrubbing machine, stain removal, yellow stain treatment",
+        "excluded": "Deep grout cleaning, hard water scaling removal"
+    },
+    {
+        "productId": 102,
+        "productName": "Classic Cleaning (2 Bathrooms)",
+        "productImage": "../img/classic2Bathroom.webp",
+        "price": 614,
+        "oldPrice": 684,
+        "type": "Bathroom Cleaning",
+        "description": "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom.",
+        "included": "Scrubbing machine, stain removal, yellow stain treatment",
+        "excluded": "Deep grout cleaning, hard water scaling removal"
+    },
+    {
+        "productId": 103,
+        "productName": "Classic Cleaning (3 Bathrooms)",
+        "productImage": "../img/classic3Bathroom.webp",
+        "price": 854,
+        "oldPrice": 1026,
+        "type": "Bathroom Cleaning",
+        "description": "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom.",
+        "included": "Scrubbing machine, stain removal, yellow stain treatment",
+        "excluded": "Deep grout cleaning, hard water scaling removal"
+    },
+    {
+        "productId": 104,
+        "productName": "Intense Cleaning (1 Bathroom)",
+        "productImage": "../img/intenseBathroom.webp",
+        "price": 519,
+        "oldPrice": 550,
+        "type": "Bathroom Cleaning",
+        "description": "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom.",
+        "included": "Salt water stain removal, corner scrubbing, scrubbing machine",
+        "excluded": "Severe mold removal, plumbing fixes"
+    },
+    {
+        "productId": 130,
+        "productName": "Bedroom Cleaning",
+        "productImage": "../img/bedroomCleaning.webp",
+        "price": 799,
+        "oldPrice": null,
+        "type": "Room Cleaning",
+        "description": "Comprehensive cleaning including dusting, vacuuming, and surface wiping.",
+        "included": "Dusting, mopping, surface wiping, vacuuming",
+        "excluded": "Deep stain removal, furniture moving"
+    },
+    {
+        "productId": 131,
+        "productName": "Living Room Cleaning",
+        "productImage": "../img/livingRoomCleaning.webp",
+        "price": 899,
+        "oldPrice": null,
+        "type": "Room Cleaning",
+        "description": "Thorough dusting, vacuuming, and wiping of surfaces including furniture.",
+        "included": "Dusting, vacuuming, surface wiping, furniture cleaning",
+        "excluded": "Wall cleaning, deep stain removal"
+    },
+    {
+        "productId": 132,
+        "productName": "Chimney Cleaning",
+        "productImage": "../img/chimneyCleaning.webp",
+        "price": 399,
+        "oldPrice": null,
+        "type": "Appliance Cleaning",
+        "description": "Deep cleaning of chimney to remove grease and soot.",
+        "included": "Oil and grease removal, filter cleaning, exterior wiping",
+        "excluded": "Internal motor cleaning, spare part replacement"
+    },
+    {
+        "productId": 133,
+        "productName": "Chimney & Stove Cleaning",
+        "productImage": "../img/chimneyStoveCleaning.webp",
+        "price": 469,
+        "oldPrice": null,
+        "type": "Appliance Cleaning",
+        "description": "Deep cleaning of chimney and stove for grease and soot removal.",
+        "included": "Chimney grease removal, stove scrubbing, exterior wiping",
+        "excluded": "Internal motor cleaning, spare part replacement"
+    },
+    {
+        "productId": 134,
+        "productName": "Fridge Cleaning (Single Door)",
+        "productImage": "../img/fridgeCleaningSingle.webp",
+        "price": 399,
+        "oldPrice": null,
+        "type": "Appliance Cleaning",
+        "description": "Thorough cleaning of single-door refrigerator interior and exterior.",
+        "included": "Interior wiping, shelf cleaning, exterior wiping",
+        "excluded": "Defrosting, deep stain removal"
+    },
+    {
+        "productId": 135,
+        "productName": "Ceiling Fan Cleaning",
+        "productImage": "../img/ceilingFanCleaning.webp",
+        "price": 49,
+        "oldPrice": null,
+        "type": "Fan Cleaning",
+        "description": "Dust removal and wiping of ceiling fan blades.",
+        "included": "Dusting, wiping",
+        "excluded": "Motor cleaning, balancing adjustment"
+    },
+    {
+        "productId": 136,
+        "productName": "Exhaust Fan Cleaning",
+        "productImage": "../img/exhaustFanCleaning.webp",
+        "price": 89,
+        "oldPrice": null,
+        "type": "Fan Cleaning",
+        "description": "Thorough cleaning of exhaust fan to remove dust and grease.",
+        "included": "Dust removal, grease cleaning",
+        "excluded": "Motor dismantling, part replacement"
+    },
+    {
+        "productId": 137,
+        "productName": "Sink Cleaning",
+        "productImage": "../img/sinkCleaning.webp",
+        "price": 99,
+        "oldPrice": null,
+        "type": "Kitchen Cleaning",
+        "description": "Deep cleaning of sink to remove stains and buildup.",
+        "included": "Scrubbing, stain removal",
+        "excluded": "Pipe unclogging, severe rust removal"
+    },
+    {
+        "productId": 138,
+        "productName": "Kitchen Cleaning",
+        "productImage": "../img/kitchenCleaning.webp",
+        "price": 299,
+        "oldPrice": null,
+        "type": "Kitchen Cleaning",
+        "description": "Surface cleaning, grease removal, and wiping of kitchen countertops.",
+        "included": "Surface wiping, tile scrubbing, grease removal",
+        "excluded": "Heavy grease buildup removal, chimney cleaning"
+    }
+]
