@@ -314,6 +314,9 @@
   .isolation-auto {
     isolation: auto;
   }
+  .z-8 {
+    z-index: 8;
+  }
   .z-auto {
     z-index: auto;
   }
