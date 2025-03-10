@@ -268,12 +268,18 @@
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         
         function loadProducts() {
-            const products = [
-                  { productId: 124, productName: "Single Plastic Water Tank Cleaning", productImage: "../img/waterTank1.webp", price: 700, oldPrice: null, type: "Plastic Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
-                { productId: 125, productName: "Two Plastic Water Tanks Cleaning", productImage: "../img/waterTank1.webp", price: 1000, oldPrice: null, type: "Plastic Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
-                { productId: 126, productName: "1500 Litre Underground Water Tank Cleaning", productImage: "../img/waterTank1.webp", price: 1000, oldPrice: null, type: "Underground Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
-                { productId: 127, productName: "1500-3000 Litre Underground Water Tank Cleaning", productImage: "../img/waterTank1.webp", price: 1300, oldPrice: null, type: "Underground Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
-            ];
+            // const products = [
+            //       { productId: 124, productName: "Single Plastic Water Tank Cleaning", productImage: "../img/waterTank1.webp", price: 700, oldPrice: null, type: "Plastic Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
+            //     { productId: 125, productName: "Two Plastic Water Tanks Cleaning", productImage: "../img/waterTank1.webp", price: 1000, oldPrice: null, type: "Plastic Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
+            //     { productId: 126, productName: "1500 Litre Underground Water Tank Cleaning", productImage: "../img/waterTank1.webp", price: 1000, oldPrice: null, type: "Underground Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
+            //     { productId: 127, productName: "1500-3000 Litre Underground Water Tank Cleaning", productImage: "../img/waterTank1.webp", price: 1300, oldPrice: null, type: "Underground Water Tank", description: "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." },
+            // ];
+            let products;
+            fetch("serviceList.json")
+            .then(Response => Response.json())
+            .then( (data) => {products = data; console.log(products)})
+            .catch(console.error("Error in loading json", error));
+            
             
             const productList = document.getElementById("product-list");
             productList.innerHTML = "";
@@ -367,8 +373,9 @@
             }).join(", ");
 
             // Construct the Google Form URL with encoded data
-            let url = `https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(formattedData)}`;
-
+            //`https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(formattedData)}`;
+            
+           let url =  `https://docs.google.com/forms/d/e/1FAIpQLScDN6s6DIp3cVQahvlIyViDSPN5ApaCtmNywlsc8Vkb5Jf9UQ/viewform?usp=pp_url&entry.1166974658=${encodeURIComponent(formattedData)}`
             window.location.href = url; // Redirect to the Google Form
 }       
     </script>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+   
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Order Form</h2>
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <h3>Your Cart:</h3>
+            <ul id="cartList"></ul> <!-- Cart Items will be displayed here -->
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+  
+    <script>
+        document.getElementById("orderForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form submission
+
+    // 1️⃣ Get Form Data
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    // 2️⃣ Get Cart Data from Local Storage
+    
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+// Convert cartItems array into a readable text format (comma-separated names)
+let cartData = cartItems.map(item => {
+    return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
+}).join(", ");
+
+
+    // 3️⃣ Send Data to Google Apps Script
+    fetch("https://script.google.com/macros/s/AKfycbweeGcPbHbRufwNEGrMc0bBpoVQn1A4IL8ryccqqgOj-ZdJbXwg_7x4JuMlfgZqRXvg/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject: cartData, message:"done" }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+        localStorage.removeItem("cart"); // Clear cart after submission
+    })
+    .catch(error => console.error("Error:", error));
+
+
+
+// fetch("https://corsproxy.io/?" + encodeURIComponent("https://script.google.com/macros/s/AKfycbxstpDHvSeaMRH1j2RvLYiSY-vtswZ9ko_xGBiNDhtTxthcdYEMAUj8PVBGm1W1YyiD/exec"), {
+//   method: "GET",
+// })
+// fetch("https://api.allorigins.win/get?url=" + encodeURIComponent("https://script.google.com/macros/s/AKfycbx-Sy8H-YIabFMPY4b6hEPVxZHOyRcGYCqiLbodExBjS1CwnwDGJ8SRWDOzCUDde24f/exec"),{
+//   method: "GET",
+// })
+//   .then(response => response.json())
+//   .then(data => console.log(JSON.parse(data.contents))) // Since allorigins wraps response in `contents`
+//   .catch(error => console.error("Error:", error));
+
+
+});
+
+    </script>
+</body>
+</html>

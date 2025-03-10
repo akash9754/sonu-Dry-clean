@@ -282,8 +282,9 @@
 
         function openGoogleForm() {
           // let mydata = "CustomValue"; // Set your predefined value here
-          let url = `https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(cartItems)}`;
-          window.location.href = url; // Redirect to the Google Form
+          let url = `https://docs.google.com/forms/d/e/1FAIpQLSfq86e-ONbSwbBWw0mz3UU9npCS-mw2WiTdsBH_2zMiuRf6PQ/viewform?usp=pp_url&entry.839337160=${encodeURIComponent(cartItems)}`;
+          window.location.href = url; // 
+        //   https://docs.google.com/forms/d/e/1FAIpQLSfq86e-ONbSwbBWw0mz3UU9npCS-mw2WiTdsBH_2zMiuRf6PQ/viewform?usp=pp_url&entry.839337160=cart
       }
     
         // document.getElementById('orderForm').addEventListener('submit', function(event) {
