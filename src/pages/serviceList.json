@@ -116,62 +116,36 @@
     { 
         "productId": 114, 
         "productName": "1 BHK Full Home Cleaning", 
-        "productImage": "../img/fullhomeCleaning.webp", 
+        "productImage": "../img/1BHKFullHomeCleaning.webp", 
         "price": 3999, "oldPrice": null, 
-        "type": "Full Home Cleaning", 
+        "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 115, 
         "productName": "2 BHK Full Home Cleaning", 
-        "productImage": "../img/fullhomeCleaning.webp", 
+        "productImage": "../img/2BHKFullHomeCleaning.webp", 
         "price": 4999, 
         "oldPrice": null, 
-        "type": "Full Home Cleaning", 
+        "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 116, 
         "productName": "3 BHK Full Home Cleaning", 
-        "productImage": "../img/fullhomeCleaning.webp", 
+        "productImage": "../img/3BHKFullHomeCleaning.webp", 
         "price": 5999, 
         "oldPrice": null, 
-        "type": "Full Home Cleaning", 
+        "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 117, 
         "productName": "4 BHK Full Home Cleaning", 
-        "productImage": "../img/fullhomeCleaning.webp", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
         "price": 7499, "oldPrice": null, 
-        "type": "Full Home Cleaning", 
+        "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
-    },
-    { 
-        "productId": 118, 
-        "productName": "Carpet Cleaning (Up to 25 sq ft)", 
-        "productImage": "../img/CarpetCLeaning.webp", 
-        "price": 450, 
-        "oldPrice": null, 
-        "type": "Carpet Cleaning", 
-        "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
-    },
-    { 
-        "productId": 119, 
-        "productName": "Carpet Cleaning (25-50 sq ft)", 
-        "productImage": "../img/CarpetCLeaning.webp", 
-        "price": 650, 
-        "oldPrice": null, 
-        "type": "Carpet Cleaning", "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
-    },
-    { 
-        "productId": 120, 
-        "productName": "Carpet Cleaning (50-100 sq ft)", 
-        "productImage": "../img/CarpetCLeaning.webp", 
-        "price": 900, 
-        "oldPrice": null, 
-        "type": "Carpet Cleaning", 
-        "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
     },
     { 
         "productId": 121, 
@@ -201,12 +175,38 @@
         "description": "Additional cost per setting beyond the initial 5 settings." 
     },
     { 
+        "productId": 118, 
+        "productName": "Carpet Cleaning (Up to 25 sq ft)", 
+        "productImage": "../img/CarpetCLeaning.webp", 
+        "price": 450, 
+        "oldPrice": null, 
+        "type": "Carpet Cleaning", 
+        "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
+    },
+    { 
+        "productId": 119, 
+        "productName": "Carpet Cleaning (25-50 sq ft)", 
+        "productImage": "../img/CarpetCLeaning.webp", 
+        "price": 650, 
+        "oldPrice": null, 
+        "type": "Carpet Cleaning", "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
+    },
+    { 
+        "productId": 120, 
+        "productName": "Carpet Cleaning (50-100 sq ft)", 
+        "productImage": "../img/CarpetCLeaning.webp", 
+        "price": 900, 
+        "oldPrice": null, 
+        "type": "Carpet Cleaning", 
+        "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
+    },
+    { 
         "productId": 124, 
         "productName": "Single Plastic Water Tank Cleaning", 
         "productImage": "../img/waterTank1.webp", 
         "price": 700, 
         "oldPrice": null, 
-        "type": "Plastic Water Tank", 
+        "type": "Water Tank", 
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
@@ -215,7 +215,7 @@
         "productImage": "../img/waterTank1.webp", 
         "price": 1000, 
         "oldPrice": null, 
-        "type": "Plastic Water Tank", 
+        "type": "Water Tank", 
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
@@ -224,7 +224,7 @@
         "productImage": "../img/waterTank1.webp", 
         "price": 1000, 
         "oldPrice": null, 
-        "type": "Underground Water Tank", 
+        "type": "Water Tank", 
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
@@ -233,7 +233,7 @@
         "productImage": "../img/waterTank1.webp", 
         "price": 1300, 
         "oldPrice": null, 
-        "type": "Underground Water Tank", 
+        "type": "Water Tank", 
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
@@ -242,7 +242,8 @@
         "productImage": "../img/singleMattressCleaning.webp", 
         "price": 450, 
         "oldPrice": null, 
-        "type": "Mattress Cleaning", "description": "Dry dusting, dry vacuuming, shampooing, wet vacuuming, drying. Excludes ink stain removal." 
+        "type": "Mattress Cleaning", 
+        "description": "Dry dusting, dry vacuuming, shampooing, wet vacuuming, drying. Excludes ink stain removal." 
     },
     { 
         "productId": 129, 
@@ -260,9 +261,7 @@
         "price": 799,
         "oldPrice": null,
         "type": "Room Cleaning",
-        "description": "Comprehensive cleaning including dusting, vacuuming, and surface wiping.",
-        "included": "Dusting, mopping, surface wiping, vacuuming",
-        "excluded": "Deep stain removal, furniture moving"
+        "description": "Comprehensive cleaning including dusting, vacuuming, and surface wiping."
     },
     {
         "productId": 131,
@@ -271,9 +270,7 @@
         "price": 899,
         "oldPrice": null,
         "type": "Room Cleaning",
-        "description": "Thorough dusting, vacuuming, and wiping of surfaces including furniture.",
-        "included": "Dusting, vacuuming, surface wiping, furniture cleaning",
-        "excluded": "Wall cleaning, deep stain removal"
+        "description": "Thorough dusting, vacuuming, and wiping of surfaces including furniture."
     },
     {
         "productId": 132,
@@ -282,74 +279,96 @@
         "price": 399,
         "oldPrice": null,
         "type": "Appliance Cleaning",
-        "description": "Deep cleaning of chimney to remove grease and soot.",
-        "included": "Oil and grease removal, filter cleaning, exterior wiping",
-        "excluded": "Internal motor cleaning, spare part replacement"
+        "description": "Deep cleaning of chimney to remove grease and soot."
     },
     {
         "productId": 133,
         "productName": "Chimney & Stove Cleaning",
         "productImage": "../img/chimneyStoveCleaning.webp",
         "price": 469,
-        "oldPrice": null,
+        "oldPrice": 549,
         "type": "Appliance Cleaning",
-        "description": "Deep cleaning of chimney and stove for grease and soot removal.",
-        "included": "Chimney grease removal, stove scrubbing, exterior wiping",
-        "excluded": "Internal motor cleaning, spare part replacement"
+        "description": "Deep cleaning of chimney and stove for grease and soot removal."
     },
     {
         "productId": 134,
         "productName": "Fridge Cleaning (Single Door)",
         "productImage": "../img/fridgeCleaningSingle.webp",
         "price": 399,
-        "oldPrice": null,
+        "oldPrice": 499,
         "type": "Appliance Cleaning",
-        "description": "Thorough cleaning of single-door refrigerator interior and exterior.",
-        "included": "Interior wiping, shelf cleaning, exterior wiping",
-        "excluded": "Defrosting, deep stain removal"
-    },
-    {
-        "productId": 135,
-        "productName": "Ceiling Fan Cleaning",
-        "productImage": "../img/ceilingFanCleaning.webp",
-        "price": 49,
-        "oldPrice": null,
-        "type": "Fan Cleaning",
-        "description": "Dust removal and wiping of ceiling fan blades.",
-        "included": "Dusting, wiping",
-        "excluded": "Motor cleaning, balancing adjustment"
+        "description": "Thorough cleaning of single-door refrigerator interior and exterior."
     },
     {
         "productId": 136,
         "productName": "Exhaust Fan Cleaning",
         "productImage": "../img/exhaustFanCleaning.webp",
         "price": 89,
-        "oldPrice": null,
-        "type": "Fan Cleaning",
-        "description": "Thorough cleaning of exhaust fan to remove dust and grease.",
-        "included": "Dust removal, grease cleaning",
-        "excluded": "Motor dismantling, part replacement"
+        "oldPrice": 120,
+        "type": "Kitchen Cleaning",
+        "description": "Thorough cleaning of exhaust fan to remove dust and grease."
     },
     {
         "productId": 137,
         "productName": "Sink Cleaning",
         "productImage": "../img/sinkCleaning.webp",
         "price": 99,
-        "oldPrice": null,
+        "oldPrice": 149,
         "type": "Kitchen Cleaning",
-        "description": "Deep cleaning of sink to remove stains and buildup.",
-        "included": "Scrubbing, stain removal",
-        "excluded": "Pipe unclogging, severe rust removal"
+        "description": "Deep cleaning of sink to remove stains and buildup."
     },
     {
         "productId": 138,
         "productName": "Kitchen Cleaning",
         "productImage": "../img/kitchenCleaning.webp",
         "price": 299,
-        "oldPrice": null,
+        "oldPrice": 349,
         "type": "Kitchen Cleaning",
-        "description": "Surface cleaning, grease removal, and wiping of kitchen countertops.",
-        "included": "Surface wiping, tile scrubbing, grease removal",
-        "excluded": "Heavy grease buildup removal, chimney cleaning"
+        "description": "Surface cleaning, grease removal, and wiping of kitchen countertops."
+    },
+    {
+        "productId": 135,
+        "productName": "Ceiling Fan Cleaning",
+        "productImage": "../img/ceilingFanCleaning.webp",
+        "price": 49,
+        "oldPrice": 99,
+        "type": "Fan Cleaning",
+        "description": "Dust removal and wiping of ceiling fan blades."
+    },
+    {
+        "productId": 139,
+        "productName": "2 Ceiling Fan Cleaning",
+        "productImage": "../img/ceilingFanCleaning.webp",
+        "price": 98,
+        "oldPrice": 198,
+        "type": "Fan Cleaning",
+        "description": "Dust removal and wiping of ceiling fan blades."
+    },
+    {
+        "productId": 140,
+        "productName": "Gas Stove Cleaning",
+        "productImage": "../img/ceilingFanCleaning.webp",
+        "price": 150,
+        "oldPrice": 199,
+        "type": "Mini Services",
+        "description": "Dust removal and wiping of ceiling fan blades."
+    },
+    {
+        "productId": 141,
+        "productName": "Microwave Cleaning",
+        "productImage": "../img/ceilingFanCleaning.webp",
+        "price": 150,
+        "oldPrice": 199,
+        "type": "Mini Services",
+        "description": "Dust removal and wiping of ceiling fan blades."
+    },
+    {
+        "productId": 142,
+        "productName": "Balcony Cleaning",
+        "productImage": "../img/ceilingFanCleaning.webp",
+        "price": 429,
+        "oldPrice": 529,
+        "type": "Mini Services",
+        "description": "Dust removal and wiping of ceiling fan blades."
     }
 ]
