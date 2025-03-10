@@ -375,14 +375,9 @@
             updateCart();
         };
 
-        function toggleFAQ(id) {
-            const faq = document.getElementById(`faq${id}`);
-            const icon = document.getElementById(`icon${id}`);
-            faq.classList.toggle("hidden");
-            icon.textContent = faq.classList.contains("hidden") ? "👉" : "👇";
-        }
     </script>
     <script src="../script/navResponsive.js"></script>
+    <script src="../script/toggleFAQ.js"></script>
     <script>
         function openGoogleForm() {
             let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
