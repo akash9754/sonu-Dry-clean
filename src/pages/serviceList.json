@@ -257,7 +257,7 @@
     {
         "productId": 130,
         "productName": "Bedroom Cleaning",
-        "productImage": "../img/bedroomCleaning.webp",
+        "productImage": "../img/BedroomCleaning.webp",
         "price": 799,
         "oldPrice": null,
         "type": "Room Cleaning",
@@ -266,7 +266,7 @@
     {
         "productId": 131,
         "productName": "Living Room Cleaning",
-        "productImage": "../img/livingRoomCleaning.webp",
+        "productImage": "../img/LivingRoomCleaning.webp",
         "price": 899,
         "oldPrice": null,
         "type": "Room Cleaning",
