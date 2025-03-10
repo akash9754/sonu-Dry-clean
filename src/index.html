@@ -282,7 +282,7 @@
                 <div class="border-b">
                     <button class="w-full flex justify-between items-center p-3 font-semibold hover:bg-gray-200" onclick="toggleFAQ(1)">
                         <span>What services does your company offer ?</span>
-                        <span id="icon-1">&gt;</span>
+                        <span id="icon-1">👉</span>
                     </button>
                     <div id="answer-1" class="p-3 hidden">
                         Our company specializes in consulting, product development, and customer support. We tailor our services to fit the unique needs of businesses across various sectors, helping them grow and succeed in a competitive market.</div>
@@ -291,7 +291,7 @@
                 <div class="border-b">
                     <button class="w-full flex justify-between items-center p-3 font-semibold hover:bg-gray-200" onclick="toggleFAQ(2)">
                         <span>How can I contact customer support ?</span>
-                        <span id="icon-2">&gt;</span>
+                        <span id="icon-2">👉</span>
                     </button>
                     <div id="answer-2" class="p-3 hidden">You can reach our customer support team by emailing on <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cleannestsolutions3100@gmail.com" target="_blank"
                         class="text-green-700">cleannestsolutions3100@gmail.com
@@ -307,7 +307,7 @@
                 <div class="border-b">
                     <button class="w-full flex justify-between items-center p-3 font-semibold hover:bg-gray-200" onclick="toggleFAQ(3)">
                         <span>What are your working hours ?</span>
-                        <span id="icon-3">&gt;</span>
+                        <span id="icon-3">👉</span>
                     </button>
                     <div id="answer-3" class="p-3 hidden">Generally, we work between 10 am to 6 pm unless there is an urgency to complete the work.</div>
                 </div>
@@ -316,7 +316,7 @@
                 <div class="border-b">
                     <button class="w-full flex justify-between items-center p-3 font-semibold hover:bg-gray-200" onclick="toggleFAQ(4)">
                         <span>Why should I choose Sonu Dry Clean ?</span>
-                        <span id="icon-4">&gt;</span>
+                        <span id="icon-4">👉</span>
                     </button>
                     <div id="answer-4" class="p-3 hidden">Sonu Dry Clean and our team of qualified professionals / partners stand for very high standards of work quality. we will make it hassle-free for you as it will ensure timely delivery and will do all the work from planning until completion..</div>
                 </div>
@@ -325,7 +325,7 @@
                 <div class="border-b">
                     <button class="w-full flex justify-between items-center p-3 font-semibold hover:bg-gray-200" onclick="toggleFAQ(5)">
                         <span>How should I reschedule or cancel a service ?</span>
-                        <span id="icon-5">&gt;</span>
+                        <span id="icon-5">👉</span>
                     </button>
                     <div id="answer-5" class="p-3 hidden">Please call our customer support team on  <a href="tel:+918817366188"
                         class="text-green-700">+91 8817366188</a> or email us at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cleannestsolutions3100@gmail.com" target="_blank"
@@ -337,7 +337,7 @@
                 <div class="border-b">
                     <button class="w-full flex justify-between items-center p-3 font-semibold hover:bg-gray-200" onclick="toggleFAQ(6)">
                         <span>How will I get refund for a cancelled service ?</span>
-                        <span id="icon-6">&gt;</span>
+                        <span id="icon-6">👉</span>
                     </button>
                     <div id="answer-6" class="p-3 hidden">Refund for any cancelled service will be processed within three working days.  </div>
                 </div>
@@ -346,7 +346,7 @@
                 <div class="border-b">
                     <button class="w-full flex justify-between items-center p-3 font-semibold hover:bg-gray-200" onclick="toggleFAQ(7)">
                         <span>Can I pay online after a service ?</span>
-                        <span id="icon-7">&gt;</span>
+                        <span id="icon-7">👉</span>
                     </button>
                     <div id="answer-7" class="p-3 hidden">Yes, You can  </div>
                 </div>
@@ -359,11 +359,11 @@
             function toggleFAQ(id) {
                 if (currentOpen) {
                     document.getElementById(currentOpen).classList.add("hidden");
-                    document.getElementById("icon-" + currentOpen.split("-")[1]).textContent = ">";
+                    document.getElementById("icon-" + currentOpen.split("-")[1]).textContent = "👉";
                 }
                 if (currentOpen !== "answer-" + id) {
                     document.getElementById("answer-" + id).classList.remove("hidden");
-                    document.getElementById("icon-" + id).textContent = "v";
+                    document.getElementById("icon-" + id).textContent = "👇";
                     currentOpen = "answer-" + id;
                 } else {
                     currentOpen = null;
