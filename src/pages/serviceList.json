@@ -212,7 +212,7 @@
     { 
         "productId": 125, 
         "productName": "Two Plastic Water Tanks Cleaning", 
-        "productImage": "../img/waterTank1.webp", 
+        "productImage": "../img/waterTank2.webp", 
         "price": 1000, 
         "oldPrice": null, 
         "type": "Water Tank", 
@@ -221,7 +221,7 @@
     { 
         "productId": 126, 
         "productName": "1500 Litre Underground Water Tank Cleaning", 
-        "productImage": "../img/waterTank1.webp", 
+        "productImage": "../img/undergroundWaterTankCleaning.webp", 
         "price": 1000, 
         "oldPrice": null, 
         "type": "Water Tank", 
@@ -230,7 +230,7 @@
     { 
         "productId": 127, 
         "productName": "1500-3000 Litre Underground Water Tank Cleaning", 
-        "productImage": "../img/waterTank1.webp", 
+        "productImage": "../img/undergroundWaterTankCleaning.webp", 
         "price": 1300, 
         "oldPrice": null, 
         "type": "Water Tank", 
@@ -277,32 +277,24 @@
         "productName": "Chimney Cleaning",
         "productImage": "../img/chimneyCleaning.webp",
         "price": 399,
-        "oldPrice": null,
+        "oldPrice": 449,
         "type": "Appliance Cleaning",
         "description": "Deep cleaning of chimney to remove grease and soot."
     },
     {
         "productId": 133,
         "productName": "Chimney & Stove Cleaning",
-        "productImage": "../img/chimneyStoveCleaning.webp",
+        "productImage": "../img/Chimney&StoveCleaning.webp",
         "price": 469,
         "oldPrice": 549,
         "type": "Appliance Cleaning",
         "description": "Deep cleaning of chimney and stove for grease and soot removal."
     },
-    {
-        "productId": 134,
-        "productName": "Fridge Cleaning (Single Door)",
-        "productImage": "../img/fridgeCleaningSingle.webp",
-        "price": 399,
-        "oldPrice": 499,
-        "type": "Appliance Cleaning",
-        "description": "Thorough cleaning of single-door refrigerator interior and exterior."
-    },
+    
     {
         "productId": 136,
         "productName": "Exhaust Fan Cleaning",
-        "productImage": "../img/exhaustFanCleaning.webp",
+        "productImage": "../img/ExhaustFanCleaning.webp",
         "price": 89,
         "oldPrice": 120,
         "type": "Kitchen Cleaning",
@@ -320,7 +312,7 @@
     {
         "productId": 138,
         "productName": "Kitchen Cleaning",
-        "productImage": "../img/kitchenCleaning.webp",
+        "productImage": "../img/KitchenCleaning1.webp",
         "price": 299,
         "oldPrice": 349,
         "type": "Kitchen Cleaning",
@@ -329,7 +321,7 @@
     {
         "productId": 135,
         "productName": "Ceiling Fan Cleaning",
-        "productImage": "../img/ceilingFanCleaning.webp",
+        "productImage": "../img/Ceiling Fan Cleaning.webp",
         "price": 49,
         "oldPrice": 99,
         "type": "Fan Cleaning",
@@ -338,7 +330,7 @@
     {
         "productId": 139,
         "productName": "2 Ceiling Fan Cleaning",
-        "productImage": "../img/ceilingFanCleaning.webp",
+        "productImage": "../img/CeilingFanCleaning2.webp",
         "price": 98,
         "oldPrice": 198,
         "type": "Fan Cleaning",
@@ -347,7 +339,7 @@
     {
         "productId": 140,
         "productName": "Gas Stove Cleaning",
-        "productImage": "../img/ceilingFanCleaning.webp",
+        "productImage": "../img/gasStove.webp",
         "price": 150,
         "oldPrice": 199,
         "type": "Mini Services",
@@ -356,7 +348,7 @@
     {
         "productId": 141,
         "productName": "Microwave Cleaning",
-        "productImage": "../img/ceilingFanCleaning.webp",
+        "productImage": "../img/microwave.webp",
         "price": 150,
         "oldPrice": 199,
         "type": "Mini Services",
@@ -365,10 +357,28 @@
     {
         "productId": 142,
         "productName": "Balcony Cleaning",
-        "productImage": "../img/ceilingFanCleaning.webp",
+        "productImage": "../img/balconyCleaning.webp",
         "price": 429,
         "oldPrice": 529,
         "type": "Mini Services",
         "description": "Dust removal and wiping of ceiling fan blades."
+    },
+    {
+        "productId": 134,
+        "productName": "Fridge Cleaning (Single Door)",
+        "productImage": "../img/fridge2Cleaning.webp",
+        "price": 399,
+        "oldPrice": 499,
+        "type": "Appliance Cleaning",
+        "description": "Thorough cleaning of single-door refrigerator interior and exterior."
+    },
+    {
+        "productId": 143,
+        "productName": "Fridge Cleaning (Double Door)",
+        "productImage": "../img/fridge2Cleaning.webp",
+        "price": 549,
+        "oldPrice": 649,
+        "type": "Appliance Cleaning",
+        "description": "Thorough cleaning of single-door refrigerator interior and exterior."
     }
 ]
