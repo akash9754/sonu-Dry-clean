@@ -1,27 +1,28 @@
 [
     { 
         "productId": 101, 
-        "productName": "Classic Cleaning (1 Bathroom)",
+        "productName": "Move-in Cleaning (1 Bathroom)",
         "productImage": "../img/classicBathroom.webp",
-        "price": 342, 
-        "oldPrice": 400, 
+        "price": 699, 
+        "oldPrice": 799, 
         "type": "Bathroom Cleaning", 
         "description": "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." 
     },
     { 
         "productId": 102, 
-        "productName": "Classic Cleaning (2 Bathrooms)", 
+        "productName": "Move-in Cleaning (2 Bathrooms)", 
         "productImage": "../img/classic2Bathroom.webp", 
-        "price": 614, "oldPrice": 684, 
+        "price": 1399, 
+        "oldPrice": 1499, 
         "type": "Bathroom Cleaning", 
         "description": "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." 
     },
     { 
         "productId": 103, 
-        "productName": "Classic Cleaning (3 Bathrooms)", 
+        "productName": "Move-in Cleaning (3 Bathrooms)", 
         "productImage": "../img/classic3Bathroom.webp", 
-        "price": 854, 
-        "oldPrice": 1026, 
+        "price": 2099, 
+        "oldPrice": 2299, 
         "type": "Bathroom Cleaning", 
         "description": "Moderate stain intensity. Removes dirt and yellow stains. Uses scrubbing machine. Time: 45 minutes per bathroom." 
     },
@@ -38,8 +39,8 @@
         "productId": 105, 
         "productName": "Intense Cleaning (2 Bathrooms)", 
         "productImage": "../img/intense2Bathroom.webp", 
-        "price": 950, 
-        "oldPrice": 1030, 
+        "price": 999, 
+        "oldPrice": 1099, 
         "type": "Bathroom Cleaning", 
         "description": "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom." 
     },
@@ -47,8 +48,8 @@
         "productId": 106, 
         "productName": "Intense Cleaning (3 Bathrooms)", 
         "productImage": "../img/intense3Bathroom.webp", 
-        "price": 1349, 
-        "oldPrice": 1557, 
+        "price": 1499, 
+        "oldPrice": 1599, 
         "type": "Bathroom Cleaning", 
         "description": "High stain intensity. Removes salt water stains, stains in corners & gaps. Uses scrubbing machine. Time: 45 minutes per bathroom."
      },
@@ -64,7 +65,9 @@
     { 
         "productId": 108, 
         "productName": "Kitchen Cleaning with Fridge & Microwave", 
-        "productImage": "../img/kitchenCleaningFridge.webp", "price": 2000, "oldPrice": null, 
+        "productImage": "../img/kitchenCleaningFridge.webp", 
+        "price": 2000, 
+        "oldPrice": null, 
         "type": "Kitchen Cleaning", 
         "description": "Stain removal of tiles, slab, sink, floor, exhaust, windows. Includes removing and placing back utensils. Cleaning of fridge and microwave. Working time: 5 hours." 
     },
@@ -117,7 +120,7 @@
         "productId": 114, 
         "productName": "1 BHK Full Home Cleaning", 
         "productImage": "../img/1BHKFullHomeCleaning.webp", 
-        "price": 3999, "oldPrice": null, 
+        "price": 4499, "oldPrice": null, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
@@ -125,7 +128,7 @@
         "productId": 115, 
         "productName": "2 BHK Full Home Cleaning", 
         "productImage": "../img/2BHKFullHomeCleaning.webp", 
-        "price": 4999, 
+        "price": 5999, 
         "oldPrice": null, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
@@ -134,7 +137,7 @@
         "productId": 116, 
         "productName": "3 BHK Full Home Cleaning", 
         "productImage": "../img/3BHKFullHomeCleaning.webp", 
-        "price": 5999, 
+        "price": 6999, 
         "oldPrice": null, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
@@ -143,18 +146,19 @@
         "productId": 117, 
         "productName": "4 BHK Full Home Cleaning", 
         "productImage": "../img/4BHKFullHomeCleaning.webp", 
-        "price": 7499, "oldPrice": null, 
+        "price": 7999, 
+        "oldPrice": null, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 121, 
-        "productName": "Single Sitting Sofa Cleaning", 
-        "productImage": "../img/singleSofaCleaning.webp", 
-        "price": 170, 
+        "productName": "5 BHK Full Home Cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 8999, 
         "oldPrice": null, 
-        "type": "Sofa Cleaning", 
-        "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Excludes additional settings." 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 122, 
@@ -255,29 +259,11 @@
         "description": "Dry dusting, dry vacuuming, shampooing, wet vacuuming, drying. Excludes ink stain removal." 
     },
     {
-        "productId": 130,
-        "productName": "Bedroom Cleaning",
-        "productImage": "../img/BedroomCleaning.webp",
-        "price": 799,
-        "oldPrice": null,
-        "type": "Room Cleaning",
-        "description": "Comprehensive cleaning including dusting, vacuuming, and surface wiping."
-    },
-    {
-        "productId": 131,
-        "productName": "Living Room Cleaning",
-        "productImage": "../img/LivingRoomCleaning.webp",
-        "price": 899,
-        "oldPrice": null,
-        "type": "Room Cleaning",
-        "description": "Thorough dusting, vacuuming, and wiping of surfaces including furniture."
-    },
-    {
         "productId": 132,
         "productName": "Chimney Cleaning",
         "productImage": "../img/chimneyCleaning.webp",
-        "price": 399,
-        "oldPrice": 449,
+        "price": 499,
+        "oldPrice": 549,
         "type": "Appliance Cleaning",
         "description": "Deep cleaning of chimney to remove grease and soot."
     },
@@ -285,8 +271,8 @@
         "productId": 133,
         "productName": "Chimney & Stove Cleaning",
         "productImage": "../img/Chimney&StoveCleaning.webp",
-        "price": 469,
-        "oldPrice": 549,
+        "price": 599,
+        "oldPrice": 649,
         "type": "Appliance Cleaning",
         "description": "Deep cleaning of chimney and stove for grease and soot removal."
     },
@@ -310,19 +296,10 @@
         "description": "Deep cleaning of sink to remove stains and buildup."
     },
     {
-        "productId": 138,
-        "productName": "Kitchen Cleaning",
-        "productImage": "../img/KitchenCleaning1.webp",
-        "price": 299,
-        "oldPrice": 349,
-        "type": "Kitchen Cleaning",
-        "description": "Surface cleaning, grease removal, and wiping of kitchen countertops."
-    },
-    {
         "productId": 135,
         "productName": "Ceiling Fan Cleaning",
         "productImage": "../img/Ceiling Fan Cleaning.webp",
-        "price": 49,
+        "price": 79,
         "oldPrice": 99,
         "type": "Fan Cleaning",
         "description": "Dust removal and wiping of ceiling fan blades."
@@ -331,7 +308,7 @@
         "productId": 139,
         "productName": "2 Ceiling Fan Cleaning",
         "productImage": "../img/CeilingFanCleaning2.webp",
-        "price": 98,
+        "price": 149,
         "oldPrice": 198,
         "type": "Fan Cleaning",
         "description": "Dust removal and wiping of ceiling fan blades."
@@ -349,8 +326,8 @@
         "productId": 141,
         "productName": "Microwave Cleaning",
         "productImage": "../img/microwave.webp",
-        "price": 150,
-        "oldPrice": 199,
+        "price": 499,
+        "oldPrice": 599,
         "type": "Mini Services",
         "description": "Dust removal and wiping of ceiling fan blades."
     },
@@ -358,27 +335,54 @@
         "productId": 142,
         "productName": "Balcony Cleaning",
         "productImage": "../img/balconyCleaning.webp",
-        "price": 429,
-        "oldPrice": 529,
+        "price": 499,
+        "oldPrice": 599,
         "type": "Mini Services",
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
         "productId": 134,
-        "productName": "Fridge Cleaning (Single Door)",
+        "productName": "Fridge Cleaning",
         "productImage": "../img/fridge2Cleaning.webp",
-        "price": 399,
-        "oldPrice": 499,
+        "price": 499,
+        "oldPrice": 599,
         "type": "Appliance Cleaning",
         "description": "Thorough cleaning of single-door refrigerator interior and exterior."
     },
-    {
-        "productId": 143,
-        "productName": "Fridge Cleaning (Double Door)",
-        "productImage": "../img/fridge2Cleaning.webp",
-        "price": 549,
-        "oldPrice": 649,
-        "type": "Appliance Cleaning",
-        "description": "Thorough cleaning of single-door refrigerator interior and exterior."
+    { 
+        "productId": 144, 
+        "productName": "2 BHK Duplex Full Home Cleaning", 
+        "productImage": "../img/2BHKFullHomeCleaning.webp", 
+        "price": 6999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 145, 
+        "productName": "3 BHK Duplex Full Home Cleaning", 
+        "productImage": "../img/3BHKFullHomeCleaning.webp", 
+        "price": 7999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 146, 
+        "productName": "4 BHK Duplex Full Home Cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 8999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 147, 
+        "productName": "5 BHK Duplex Full Home Cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 9999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     }
 ]
