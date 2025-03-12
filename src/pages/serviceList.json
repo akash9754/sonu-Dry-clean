@@ -384,5 +384,23 @@
         "oldPrice": null, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 148, 
+        "productName": "Jet AC Cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 599, 
+        "oldPrice": 649, 
+        "type": "AC Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 149, 
+        "productName": "Lite AC Cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 449, 
+        "oldPrice": 549, 
+        "type": "AC Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     }
 ]
