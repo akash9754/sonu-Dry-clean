@@ -268,21 +268,8 @@
     <script src="../script/serviceList.js"></script>
     <script src="../script/navResponsive.js"></script>
     <script src="../script/toggleFAQ.js"></script>
-    <script>
-        function openGoogleForm() {
-            let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    <script src="../script/checkout.js"></script>
 
-            // Convert cartItems array into a readable text format (comma-separated names)
-            let formattedData = cartItems.map(item => {
-                return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
-            }).join(", ");
-
-            // Construct the Google Form URL with encoded data
-            let url = `https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(formattedData)}`;
-
-            window.location.href = url; // Redirect to the Google Form
-}       
-    </script>
 
 </body>
 </html>

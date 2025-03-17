@@ -268,21 +268,22 @@
     <script src="../script/serviceList.js"></script>
     <script src="../script/toggleFAQ.js"></script>
     <script>
-        function openGoogleForm() {
-            let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+//         function openGoogleForm() {
+//             let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
-            // Convert cartItems array into a readable text format (comma-separated names)
-            let formattedData = cartItems.map(item => {
-                return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
-            }).join(", ");
+//             // Convert cartItems array into a readable text format (comma-separated names)
+//             let formattedData = cartItems.map(item => {
+//                 return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
+//             }).join(", ");
 
-            // Construct the Google Form URL with encoded data
-            //`https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(formattedData)}`;
+//             // Construct the Google Form URL with encoded data
+//             //`https://docs.google.com/forms/d/e/1FAIpQLSd73j3E5gCb3eC6FcGInRSJxRYUTYYambgy9xzhBMN1HHe5Wg/viewform?usp=pp_url&entry.362499764=${encodeURIComponent(formattedData)}`;
             
-           let url =  `https://docs.google.com/forms/d/e/1FAIpQLScDN6s6DIp3cVQahvlIyViDSPN5ApaCtmNywlsc8Vkb5Jf9UQ/viewform?usp=pp_url&entry.1166974658=${encodeURIComponent(formattedData)}`
-            window.location.href = url; // Redirect to the Google Form
-}       
+//            let url =  `https://docs.google.com/forms/d/e/1FAIpQLScDN6s6DIp3cVQahvlIyViDSPN5ApaCtmNywlsc8Vkb5Jf9UQ/viewform?usp=pp_url&entry.1166974658=${encodeURIComponent(formattedData)}`
+//             window.location.href = url; // Redirect to the Google Form
+// }       
     </script>
+    <script src="../script/checkout.js"></script>
 
 </body>
 </html>

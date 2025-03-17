@@ -388,7 +388,7 @@
     { 
         "productId": 148, 
         "productName": "Jet AC Cleaning", 
-        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "productImage": "../img/acService2.webp", 
         "price": 599, 
         "oldPrice": 649, 
         "type": "AC Cleaning", 
@@ -397,7 +397,7 @@
     { 
         "productId": 149, 
         "productName": "Lite AC Cleaning", 
-        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "productImage": "../img/acService1.webp", 
         "price": 449, 
         "oldPrice": 549, 
         "type": "AC Cleaning", 
