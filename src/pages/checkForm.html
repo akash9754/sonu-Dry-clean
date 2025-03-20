@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Order Form</h2>
+    <form id="orderForm" name="form">
+        <div id="final"><h1></h1></div>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="text" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+        <textarea name="list" id="list"></textarea>
+        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <!-- <script>
+        document.getElementById("orderForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById("name").value.trim();
+            let mobile = document.getElementById("mobile").value.trim();
+            let address = document.getElementById("address").value.trim();
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Convert cartItems array into a readable text format (comma-separated names)
+    let cartItems = cart.map(item => {
+        return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
+    }).join(", ");
+
+            if (!name || !mobile || !address) {
+                alert("Please fill all fields");
+                return;
+            }
+
+            let data = { name, mobile, address, cartItems };
+            let url = "https://script.google.com/macros/s/AKfycbweTigAr-O9TNyQQEmihF8S76UKfut_oMVNVUdV4353BBJ8UUJ9m84_UlnWgFhAQQ/exec";  // Replace with actual URL
+            console.log("data: ", data);
+            console.log("url: " , url);
+            
+            try {
+                let response = await fetch(url, {
+                    method: "POST",
+                    mode: "cors",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data)
+                });
+                
+                let result = await response.json();
+                console.log(result);
+                if (result.status === "Success") {
+                    alert("Order submitted successfully!");
+                    document.getElementById("orderForm").reset();
+                    localStorage.removeItem("cart"); // Clear cart after order
+                } else {
+                    alert("Error submitting order.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Failed to submit order. Check CORS and network settings.");
+            }
+        });
+    </script> -->
+
+    <script>
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cartList = cart.map(item => {
+                return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
+            }).join(", ");
+            // const cartItems = 
+            document.getElementById('list').value = String(cartList);
+            // cartItems.innerHTML = cartList;
+            console.log("cart: ",cartList);
+            
+
+        const url = 'https://script.google.com/macros/s/AKfycbx8j3HH-8XMNB2_aW447odHLWanrp4R3bGRYgDqH-DuBBcdyuf52dTerbNbZJS6jtQ/exec'
+            
+            const form = document.forms['form'];
+            const result = document.getElementById('final');
+            form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+
+                    fetch(url,{
+                        method:"POST",
+                        body : new FormData(form)
+                    })
+                    .then((res)=>res.text())
+                    .then((finalRes)=>{
+                            result.innerHTML = finalRes;
+                            result.style.color = 'green'
+                            setTimeout(()=>{
+                                result.innerHTML = ''
+                            },5000)
+                        })
+                    .catch(error => {
+                            console.error("Error : ", error);
+                            result.innerHTML = error;
+                            result.style.color = 'red'
+                            setTimeout(()=>{
+                                result.innerHTML = ''
+                            },5000)
+                        
+                        });
+
+            })
+    </script>
+</body>
+</html>
