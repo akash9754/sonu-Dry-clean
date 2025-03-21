@@ -402,5 +402,49 @@
         "oldPrice": 549, 
         "type": "AC Cleaning", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 150, 
+        "productName": "1 BHK Unfurnished Full Home Cleaning", 
+        "productImage": "../img/1BHKFullHomeCleaning.webp", 
+        "price": 3499, "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 151, 
+        "productName": "2 BHK Unfurnished Full Home Cleaning", 
+        "productImage": "../img/2BHKFullHomeCleaning.webp", 
+        "price": 4999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 152, 
+        "productName": "3 BHK Unfurnished Full Home Cleaning", 
+        "productImage": "../img/3BHKFullHomeCleaning.webp", 
+        "price": 5999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 153, 
+        "productName": "4 BHK Unfurnished Full Home Cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 6999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 154, 
+        "productName": "5 BHK Unfurnished Full Home Cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 7999, 
+        "oldPrice": null, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     }
 ]
