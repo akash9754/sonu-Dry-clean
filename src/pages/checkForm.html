@@ -101,21 +101,25 @@
                 return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
             }).join(", ");
             // const cartItems = 
-            document.getElementById('list').value = String(cartList);
+            document.getElementById('list').value = cartList;
             // cartItems.innerHTML = cartList;
             console.log("cart: ",cartList);
             
 
-        const url = 'https://script.google.com/macros/s/AKfycbx8j3HH-8XMNB2_aW447odHLWanrp4R3bGRYgDqH-DuBBcdyuf52dTerbNbZJS6jtQ/exec'
-            
+        const url = 'https://script.google.com/macros/s/AKfycbwuDoDfysr2zvJWnbeqImn5R0WBzYYnLPJQgnbyovTRG_jq3KAkCIKX5vgyC9uPdls/exec'
             const form = document.forms['form'];
             const result = document.getElementById('final');
             form.addEventListener("submit",(e)=>{
             e.preventDefault();
 
+            const formData = new FormData(form);
+            for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+    }
+
                     fetch(url,{
                         method:"POST",
-                        body : new FormData(form)
+                        body : formData
                     })
                     .then((res)=>res.text())
                     .then((finalRes)=>{
