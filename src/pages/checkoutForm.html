@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Form</title>
-    <style>
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 400px;
@@ -33,11 +34,13 @@
         button:hover {
             background: #218838;
         }
-    </style>
+    </style> -->
 </head>
-<body>
+<!-- <body> -->
+<body class="flex items-center justify-center min-h-screen bg-gray-100 p-4">
 
-    <h2>Order Form</h2>
+
+    <!-- <h2>Order Form</h2>
     <form id="orderForm" name="form">
         <div id="final"><h1></h1></div>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -45,57 +48,33 @@
         <textarea name="list" id="list"></textarea>
         <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
         <button type="submit">Submit Order</button>
-    </form>
+    </form> -->
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-semibold text-center text-gray-700 mb-4">Complete Your Booking</h2>
+        <form id="orderForm" name="form" class="space-y-4">
+            <div id="final"><h1></h1></div> <!-- //result message-->
+            <input type="text" id="name" placeholder="Your Name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            <input type="number" id="mobile" name="mobile" placeholder="Your Mobile Number" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            <textarea  name="list" id="list" placeholder="Cart Item"  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
+            <textarea  id="address" name="address" placeholder="Enter your address" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
+            <button type="submit" id="submitButton" class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition duration-200">Confirm Your Booking</button>
+        </form>
+        <!-- <form id="orderForm" name="form">
+            <div id="final"><h1></h1></div>
+            <input type="text" id="name"  placeholder="Enter your name" required>
+            <input type="number" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+            <textarea name="list" id="list"></textarea>
+            <textarea  required></textarea>
+            <button type="submit">Submit Order</button>
+        </form> -->
+    </div>
 
-    <!-- <script>
-        document.getElementById("orderForm").addEventListener("submit", async function(event) {
-            event.preventDefault();
-            
-            let name = document.getElementById("name").value.trim();
-            let mobile = document.getElementById("mobile").value.trim();
-            let address = document.getElementById("address").value.trim();
-            let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Convert cartItems array into a readable text format (comma-separated names)
-    let cartItems = cart.map(item => {
-        return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
-    }).join(", ");
-
-            if (!name || !mobile || !address) {
-                alert("Please fill all fields");
-                return;
-            }
-
-            let data = { name, mobile, address, cartItems };
-            let url = "https://script.google.com/macros/s/AKfycbweTigAr-O9TNyQQEmihF8S76UKfut_oMVNVUdV4353BBJ8UUJ9m84_UlnWgFhAQQ/exec";  // Replace with actual URL
-            console.log("data: ", data);
-            console.log("url: " , url);
-            
-            try {
-                let response = await fetch(url, {
-                    method: "POST",
-                    mode: "cors",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(data)
-                });
-                
-                let result = await response.json();
-                console.log(result);
-                if (result.status === "Success") {
-                    alert("Order submitted successfully!");
-                    document.getElementById("orderForm").reset();
-                    localStorage.removeItem("cart"); // Clear cart after order
-                } else {
-                    alert("Error submitting order.");
-                }
-            } catch (error) {
-                console.error("Error:", error);
-                alert("Failed to submit order. Check CORS and network settings.");
-            }
-        });
-    </script> -->
 
     <script>
+
+           
+
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
             let cartList = cart.map(item => {
                 return `${item.name} (Qty: ${item.quantity})`; // Modify based on your object structure
@@ -104,6 +83,11 @@
             document.getElementById('list').value = cartList;
             // cartItems.innerHTML = cartList;
             console.log("cart: ",cartList);
+
+            function isValidIndianNumber(number) {
+                        const regex = /^[6-9]\d{9}$/;
+                        return regex.test(number);
+                    }
             
 
         const url = 'https://script.google.com/macros/s/AKfycbwuDoDfysr2zvJWnbeqImn5R0WBzYYnLPJQgnbyovTRG_jq3KAkCIKX5vgyC9uPdls/exec'
@@ -111,11 +95,29 @@
             const result = document.getElementById('final');
             form.addEventListener("submit",(e)=>{
             e.preventDefault();
+            const name1 = document.getElementById("name").value.trim();
+            const mobile1 = document.getElementById("mobile").value.trim();
+            const address1 = document.getElementById("address").value.trim();
+
+            // console.log("name: ", name1);
+            // console.log("mobile: ", mobile1);
+            // console.log("adress: ", address1);
+            
+
+            if (!name1 || !address1) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            if (!isValidIndianNumber(mobile1)) {
+                alert("Please enter valid number");
+                return;
+            }
 
             const formData = new FormData(form);
-            for (let [key, value] of formData.entries()) {
-        console.log(`${key}: ${value}`);
-    }
+    //         for (let [key, value] of formData.entries()) {
+    //     console.log(`${key}: ${value}`);
+    // }
 
                     fetch(url,{
                         method:"POST",
@@ -125,6 +127,13 @@
                     .then((finalRes)=>{
                             result.innerHTML = finalRes;
                             result.style.color = 'green'
+
+                            // Clear cart after successful submission
+                            localStorage.removeItem("cart");
+                            document.getElementById('list').value = ""; // Reset input field
+                            document.getElementById("name").value = "";
+                            document.getElementById("mobile").value = "";
+                            document.getElementById("address").value = "";
                             setTimeout(()=>{
                                 result.innerHTML = ''
                             },5000)
