@@ -406,7 +406,7 @@
     { 
         "productId": 150, 
         "productName": "1 BHK Unfurnished Full Home Cleaning", 
-        "productImage": "../img/1BHKFullHomeCleaning.webp", 
+        "productImage": "../img/unfurnished1.webp", 
         "price": 3499, "oldPrice": null, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
@@ -414,7 +414,7 @@
     { 
         "productId": 151, 
         "productName": "2 BHK Unfurnished Full Home Cleaning", 
-        "productImage": "../img/2BHKFullHomeCleaning.webp", 
+        "productImage": "../img/unfurnished2.webp", 
         "price": 4999, 
         "oldPrice": null, 
         "type": "Full Home Dusting", 
@@ -423,7 +423,7 @@
     { 
         "productId": 152, 
         "productName": "3 BHK Unfurnished Full Home Cleaning", 
-        "productImage": "../img/3BHKFullHomeCleaning.webp", 
+        "productImage": "../img/unfurnished3.webp", 
         "price": 5999, 
         "oldPrice": null, 
         "type": "Full Home Dusting", 
@@ -432,7 +432,7 @@
     { 
         "productId": 153, 
         "productName": "4 BHK Unfurnished Full Home Cleaning", 
-        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "productImage": "../img/unfurnished4.webp", 
         "price": 6999, 
         "oldPrice": null, 
         "type": "Full Home Dusting", 
@@ -441,7 +441,7 @@
     { 
         "productId": 154, 
         "productName": "5 BHK Unfurnished Full Home Cleaning", 
-        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "productImage": "../img/unfurnished4.webp", 
         "price": 7999, 
         "oldPrice": null, 
         "type": "Full Home Dusting", 
