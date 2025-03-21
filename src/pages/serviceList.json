@@ -117,7 +117,7 @@
         "description": "Thorough cleaning of floors using scrubbing machines."
     },
     { 
-        "productId": 150, 
+        "productId": 114, 
         "productName": "1 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished1.webp", 
         "price": 3499, "oldPrice": null, 
@@ -125,7 +125,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 114, 
+        "productId": 115, 
         "productName": "1 BHK Full Home Cleaning", 
         "productImage": "../img/1BHKFullHomeCleaning.webp", 
         "price": 4499, "oldPrice": null, 
@@ -133,7 +133,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 151, 
+        "productId": 116, 
         "productName": "2 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished2.webp", 
         "price": 4999, 
@@ -142,7 +142,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 115, 
+        "productId": 117, 
         "productName": "2 BHK Full Home Cleaning", 
         "productImage": "../img/2BHKFullHomeCleaning.webp", 
         "price": 5999, 
@@ -151,7 +151,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 144, 
+        "productId": 118, 
         "productName": "2 BHK Duplex Full Home Cleaning", 
         "productImage": "../img/2BHKFullHomeCleaning.webp", 
         "price": 6999, 
@@ -160,7 +160,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 152, 
+        "productId": 119, 
         "productName": "3 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished3.webp", 
         "price": 5999, 
@@ -169,7 +169,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 116, 
+        "productId": 120, 
         "productName": "3 BHK Full Home Cleaning", 
         "productImage": "../img/3BHKFullHomeCleaning.webp", 
         "price": 6999, 
@@ -179,7 +179,7 @@
     },
     
     { 
-        "productId": 145, 
+        "productId": 121, 
         "productName": "3 BHK Duplex Full Home Cleaning", 
         "productImage": "../img/3BHKFullHomeCleaning.webp", 
         "price": 7999, 
@@ -188,7 +188,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 153, 
+        "productId": 122, 
         "productName": "4 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished4.webp", 
         "price": 6999, 
@@ -197,7 +197,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 117, 
+        "productId": 123, 
         "productName": "4 BHK Full Home Cleaning", 
         "productImage": "../img/4BHKFullHomeCleaning.webp", 
         "price": 7999, 
@@ -206,7 +206,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 146, 
+        "productId": 124, 
         "productName": "4 BHK Duplex Full Home Cleaning", 
         "productImage": "../img/4BHKFullHomeCleaning.webp", 
         "price": 8999, 
@@ -215,7 +215,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 154, 
+        "productId": 125, 
         "productName": "5 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished4.webp", 
         "price": 7999, 
@@ -225,7 +225,7 @@
     },
     
     { 
-        "productId": 121, 
+        "productId": 126, 
         "productName": "5 BHK Full Home Cleaning", 
         "productImage": "../img/4BHKFullHomeCleaning.webp", 
         "price": 8999, 
@@ -234,7 +234,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 147, 
+        "productId": 127, 
         "productName": "5 BHK Duplex Full Home Cleaning", 
         "productImage": "../img/4BHKFullHomeCleaning.webp", 
         "price": 9999, 
@@ -243,7 +243,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 122, 
+        "productId": 128, 
         "productName": "Minimum 5 Sitting Sofa Cleaning", 
         "productImage": "../img/fiveSofaCleaning.webp", 
         "price": 850, 
@@ -252,7 +252,7 @@
         "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Includes up to 5 settings." 
     },
     { 
-        "productId": 123, 
+        "productId": 129, 
         "productName": "Additional Setting (Beyond 5)", 
         "productImage": "../img/SofaCleaning.webp", 
         "price": 150, 
@@ -261,7 +261,7 @@
         "description": "Additional cost per setting beyond the initial 5 settings." 
     },
     { 
-        "productId": 118, 
+        "productId": 130, 
         "productName": "Carpet Cleaning (Up to 25 sq ft)", 
         "productImage": "../img/CarpetCLeaning.webp", 
         "price": 450, 
@@ -270,7 +270,7 @@
         "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
     },
     { 
-        "productId": 119, 
+        "productId": 131, 
         "productName": "Carpet Cleaning (25-50 sq ft)", 
         "productImage": "../img/CarpetCLeaning.webp", 
         "price": 650, 
@@ -278,7 +278,7 @@
         "type": "Carpet Cleaning", "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
     },
     { 
-        "productId": 120, 
+        "productId": 132, 
         "productName": "Carpet Cleaning (50-100 sq ft)", 
         "productImage": "../img/CarpetCLeaning.webp", 
         "price": 900, 
@@ -287,7 +287,7 @@
         "description": "Dry vacuuming, shampooing, wet vacuuming, drying. Allow 10-12 hours for drying." 
     },
     { 
-        "productId": 124, 
+        "productId": 133, 
         "productName": "Single Plastic Water Tank Cleaning", 
         "productImage": "../img/waterTank1.webp", 
         "price": 700, 
@@ -296,7 +296,7 @@
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
-        "productId": 125, 
+        "productId": 134, 
         "productName": "Two Plastic Water Tanks Cleaning", 
         "productImage": "../img/waterTank2.webp", 
         "price": 1000, 
@@ -305,7 +305,7 @@
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
-        "productId": 126, 
+        "productId": 135, 
         "productName": "1500 Litre Underground Water Tank Cleaning", 
         "productImage": "../img/undergroundWaterTankCleaning.webp", 
         "price": 1000, 
@@ -314,7 +314,7 @@
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
-        "productId": 127, 
+        "productId": 136, 
         "productName": "1500-3000 Litre Underground Water Tank Cleaning", 
         "productImage": "../img/undergroundWaterTankCleaning.webp", 
         "price": 1300, 
@@ -323,7 +323,7 @@
         "description": "Thorough cleaning with bleaching powder. Procurement of spare parts, tools, and helper at extra cost." 
     },
     { 
-        "productId": 128, 
+        "productId": 137, 
         "productName": "Single Bed Mattress Cleaning", 
         "productImage": "../img/singleMattressCleaning.webp", 
         "price": 450, 
@@ -332,7 +332,7 @@
         "description": "Dry dusting, dry vacuuming, shampooing, wet vacuuming, drying. Excludes ink stain removal." 
     },
     { 
-        "productId": 129, 
+        "productId": 138, 
         "productName": "Double Bed Mattress Cleaning", 
         "productImage": "../img/doubleMattresCleaning.webp", 
         "price": 650, 
@@ -341,7 +341,7 @@
         "description": "Dry dusting, dry vacuuming, shampooing, wet vacuuming, drying. Excludes ink stain removal." 
     },
     {
-        "productId": 132,
+        "productId": 139,
         "productName": "Chimney Cleaning",
         "productImage": "../img/chimneyCleaning.webp",
         "price": 499,
@@ -350,7 +350,7 @@
         "description": "Deep cleaning of chimney to remove grease and soot."
     },
     {
-        "productId": 133,
+        "productId": 140,
         "productName": "Chimney & Stove Cleaning",
         "productImage": "../img/Chimney&StoveCleaning.webp",
         "price": 599,
@@ -360,7 +360,7 @@
     },
     
     {
-        "productId": 136,
+        "productId": 141,
         "productName": "Exhaust Fan Cleaning",
         "productImage": "../img/ExhaustFanCleaning.webp",
         "price": 89,
@@ -369,7 +369,7 @@
         "description": "Thorough cleaning of exhaust fan to remove dust and grease."
     },
     {
-        "productId": 137,
+        "productId": 142,
         "productName": "Sink Cleaning",
         "productImage": "../img/sinkCleaning.webp",
         "price": 99,
@@ -378,7 +378,7 @@
         "description": "Deep cleaning of sink to remove stains and buildup."
     },
     {
-        "productId": 135,
+        "productId": 143,
         "productName": "Ceiling Fan Cleaning",
         "productImage": "../img/Ceiling Fan Cleaning.webp",
         "price": 79,
@@ -387,7 +387,7 @@
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
-        "productId": 139,
+        "productId": 144,
         "productName": "2 Ceiling Fan Cleaning",
         "productImage": "../img/CeilingFanCleaning2.webp",
         "price": 149,
@@ -396,7 +396,7 @@
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
-        "productId": 140,
+        "productId": 145,
         "productName": "Gas Stove Cleaning",
         "productImage": "../img/gasStove.webp",
         "price": 150,
@@ -405,7 +405,7 @@
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
-        "productId": 141,
+        "productId": 146,
         "productName": "Microwave Cleaning",
         "productImage": "../img/microwave.webp",
         "price": 499,
@@ -414,7 +414,7 @@
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
-        "productId": 142,
+        "productId": 147,
         "productName": "Balcony Cleaning",
         "productImage": "../img/balconyCleaning.webp",
         "price": 499,
@@ -423,7 +423,7 @@
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
-        "productId": 134,
+        "productId": 148,
         "productName": "Fridge Cleaning",
         "productImage": "../img/fridge2Cleaning.webp",
         "price": 499,
@@ -433,7 +433,7 @@
     },
     
     { 
-        "productId": 148, 
+        "productId": 149, 
         "productName": "Jet AC Cleaning", 
         "productImage": "../img/acService2.webp", 
         "price": 599, 
@@ -442,7 +442,7 @@
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
-        "productId": 149, 
+        "productId": 150, 
         "productName": "Lite AC Cleaning", 
         "productImage": "../img/acService1.webp", 
         "price": 449, 
