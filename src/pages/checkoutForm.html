@@ -202,6 +202,24 @@
             </div>
         </div>
     </footer>
+
+    
+    <!-- Modal Popup -->
+<div id="popupModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+        <h2 class="text-xl font-semibold mb-4">Order Confirmed!</h2>
+        <p>Your order has been successfully placed.</p>
+        <button id="closeModal" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
+    </div>
+</div>
+
+<script>
+    
+    
+    document.getElementById("closeModal").addEventListener("click", function() {
+        document.getElementById("popupModal").classList.add("hidden");
+    });
+</script>
     <!-- =========================  Footer section End =========================== -->
     <script src="../script/navResponsive.js"></script>
     
@@ -232,13 +250,14 @@
             const name1 = document.getElementById("name").value.trim();
             const mobile1 = document.getElementById("mobile").value.trim();
             const address1 = document.getElementById("address").value.trim();
+            const c1 =  document.getElementById('list').value.trim();
 
             // console.log("name: ", name1);
             // console.log("mobile: ", mobile1);
             // console.log("adress: ", address1);
             
 
-            if (!name1 || !address1) {
+            if (!name1 || !address1 || !c1) {
                 alert("Please fill out all fields.");
                 return;
             }
@@ -261,6 +280,8 @@
                     .then((finalRes)=>{
                             result.innerHTML = finalRes;
                             result.style.color = 'green'
+
+                            document.getElementById("popupModal").classList.remove("hidden");
 
                             // Clear cart after successful submission
                             localStorage.removeItem("cart");

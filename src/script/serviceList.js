@@ -39,7 +39,12 @@ function addToCart(id, name, price) {
     }
     saveCart();
     updateCart();
+    document.getElementById("popupModal").classList.remove("hidden");
 }
+
+document.getElementById("closeModal").addEventListener("click", function() {
+    document.getElementById("popupModal").classList.add("hidden");
+});
 
 function removeFromCart(id) {
     cart = cart.filter(item => item.id !== id);
