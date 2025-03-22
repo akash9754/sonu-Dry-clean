@@ -67,18 +67,18 @@
         </div>
     
 
-<!-- Mobile Menu (Initially Hidden) -->
-<div id="mobile-menu" class="hidden flex-col items-center space-y-4 p-5 bg-white shadow-lg mt-2 md:hidden">
-    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="../index.html">Home</a>
-    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./services.html">Services</a>
-    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./aboutUs.html">About Us</a>
-    <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./contactUs.html">Contact Us</a>
-    <!-- <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./termsAndConditions.html">Terms & Condition</a>
-    <button class="h-12 w-48 text-lg bg-slate-950 text-white rounded-full p-2 flex items-center justify-center">
-        <img src="img/Male User.png" class="w-8 h-7" alt="">
-        <p>Login/Signup</p>
-    </button> -->
-</div>
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden flex-col items-center space-y-4 p-5 bg-white shadow-lg mt-2 md:hidden">
+            <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="../index.html">Home</a>
+            <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./services.html">Services</a>
+            <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./aboutUs.html">About Us</a>
+            <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./contactUs.html">Contact Us</a>
+            <!-- <a class="block py-2 px-4 text-lg font-normal hover:bg-orange-500 hover:text-white rounded" href="./termsAndConditions.html">Terms & Condition</a>
+            <button class="h-12 w-48 text-lg bg-slate-950 text-white rounded-full p-2 flex items-center justify-center">
+                <img src="img/Male User.png" class="w-8 h-7" alt="">
+                <p>Login/Signup</p>
+            </button> -->
+        </div>
 
 
 <!-- ======================== Navbar End ========================= -->
@@ -121,9 +121,20 @@
             </div>
         
         </div> -->
-</div>
+<!-- </div> -->
      <!-- =========================  cart section ============================== -->
      <!-- =========================  Footer section ============================== -->
+
+     <!-- Modal Popup -->
+      <div id="popupModal" class="hidden">
+        <div  class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center ">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+                <h2 class="text-xl font-semibold mb-4">Order Confirmed!</h2>
+                <p>Your order has been successfully placed.</p>
+                <button id="closeModal" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
+            </div>
+        </div>
+        </div>
 
      <footer class="bg-gray-900 text-white mt-5 py-10">
         <div class="container mx-auto px-6 lg:px-20">
@@ -204,14 +215,7 @@
     </footer>
 
     
-    <!-- Modal Popup -->
-<div id="popupModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
-        <h2 class="text-xl font-semibold mb-4">Order Confirmed!</h2>
-        <p>Your order has been successfully placed.</p>
-        <button id="closeModal" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
-    </div>
-</div>
+    
 
 <script>
     
