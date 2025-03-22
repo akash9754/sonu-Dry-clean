@@ -120,15 +120,17 @@
         "productId": 114, 
         "productName": "1 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished1.webp", 
-        "price": 3499, "oldPrice": null, 
+        "price": 3499, 
+        "oldPrice": 4049, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 115, 
-        "productName": "1 BHK Full Home Cleaning", 
+        "productName": "1 BHK Furnished Full Home Cleaning", 
         "productImage": "../img/1BHKFullHomeCleaning.webp", 
-        "price": 4499, "oldPrice": null, 
+        "price": 4999, 
+        "oldPrice": 5499, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
@@ -136,81 +138,55 @@
         "productId": 116, 
         "productName": "2 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished2.webp", 
-        "price": 4999, 
-        "oldPrice": null, 
+        "price": 3999, 
+        "oldPrice": 4499, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 117, 
-        "productName": "2 BHK Full Home Cleaning", 
+        "productName": "2 BHK Furnished Full Home Cleaning", 
         "productImage": "../img/2BHKFullHomeCleaning.webp", 
-        "price": 5999, 
-        "oldPrice": null, 
-        "type": "Full Home Dusting", 
-        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
-    },
-    { 
-        "productId": 118, 
-        "productName": "2 BHK Duplex Full Home Cleaning", 
-        "productImage": "../img/2BHKFullHomeCleaning.webp", 
-        "price": 6999, 
-        "oldPrice": null, 
-        "type": "Full Home Dusting", 
-        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
-    },
-    { 
-        "productId": 119, 
-        "productName": "3 BHK Unfurnished Full Home Cleaning", 
-        "productImage": "../img/unfurnished3.webp", 
-        "price": 5999, 
-        "oldPrice": null, 
-        "type": "Full Home Dusting", 
-        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
-    },
-    { 
-        "productId": 120, 
-        "productName": "3 BHK Full Home Cleaning", 
-        "productImage": "../img/3BHKFullHomeCleaning.webp", 
-        "price": 6999, 
-        "oldPrice": null, 
+        "price": 5699, 
+        "oldPrice": 6199, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     
     { 
-        "productId": 121, 
-        "productName": "3 BHK Duplex Full Home Cleaning", 
-        "productImage": "../img/3BHKFullHomeCleaning.webp", 
-        "price": 7999, 
-        "oldPrice": null, 
+        "productId": 119, 
+        "productName": "3 BHK Unfurnished Full Home Cleaning", 
+        "productImage": "../img/unfurnished3.webp", 
+        "price": 4999, 
+        "oldPrice": 5499, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
+        "productId": 120, 
+        "productName": "3 BHK Furnished Full Home Cleaning", 
+        "productImage": "../img/3BHKFullHomeCleaning.webp", 
+        "price": 7099, 
+        "oldPrice": 7599, 
+        "type": "Full Home Dusting", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    
+    { 
         "productId": 122, 
         "productName": "4 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished4.webp", 
-        "price": 6999, 
-        "oldPrice": null, 
+        "price": 6499, 
+        "oldPrice": 6999, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     { 
         "productId": 123, 
-        "productName": "4 BHK Full Home Cleaning", 
-        "productImage": "../img/4BHKFullHomeCleaning.webp", 
-        "price": 7999, 
-        "oldPrice": null, 
-        "type": "Full Home Dusting", 
-        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
-    },
-    { 
-        "productId": 124, 
-        "productName": "4 BHK Duplex Full Home Cleaning", 
+        "productName": "4 BHK Furnished Full Home Cleaning", 
         "productImage": "../img/4BHKFullHomeCleaning.webp", 
         "price": 8999, 
-        "oldPrice": null, 
+        "oldPrice": 9499, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
@@ -218,27 +194,18 @@
         "productId": 125, 
         "productName": "5 BHK Unfurnished Full Home Cleaning", 
         "productImage": "../img/unfurnished4.webp", 
-        "price": 7999, 
-        "oldPrice": null, 
+        "price": 7499, 
+        "oldPrice": 7999, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
     
     { 
         "productId": 126, 
-        "productName": "5 BHK Full Home Cleaning", 
+        "productName": "5 BHK Furnished Full Home Cleaning", 
         "productImage": "../img/4BHKFullHomeCleaning.webp", 
-        "price": 8999, 
-        "oldPrice": null, 
-        "type": "Full Home Dusting", 
-        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
-    },
-    { 
-        "productId": 127, 
-        "productName": "5 BHK Duplex Full Home Cleaning", 
-        "productImage": "../img/4BHKFullHomeCleaning.webp", 
-        "price": 9999, 
-        "oldPrice": null, 
+        "price": 10699, 
+        "oldPrice": 11199, 
         "type": "Full Home Dusting", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     },
@@ -448,6 +415,134 @@
         "price": 449, 
         "oldPrice": 549, 
         "type": "AC Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 151, 
+        "productName": "<1200 sq ft Unfurnished bungalow cleaning", 
+        "productImage": "../img/unfurnished1.webp", 
+        "price": 5749, 
+        "oldPrice": 6249, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 152, 
+        "productName": "<1200 sq ft Furnished bungalow cleaning", 
+        "productImage": "../img/3BHKFullHomeCleaning.webp", 
+        "price": 8599, 
+        "oldPrice": 9099, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 153, 
+        "productName": "1200-2000 sq ft Unfurnished bungalow cleaning", 
+        "productImage": "../img/unfurnished2.webp", 
+        "price": 7499, 
+        "oldPrice": 7999, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 154, 
+        "productName": "1200-2000 sq ft Furnished bungalow cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 11699, 
+        "oldPrice": 12199, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 155, 
+        "productName": "2000-3000 sq ft Unfurnished bungalow cleaning", 
+        "productImage": "../img/unfurnished1.webp", 
+        "price": 12499, 
+        "oldPrice": 13549, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 156, 
+        "productName": "2000-3000 sq ft Furnished bungalow cleaning", 
+        "productImage": "../img/1BHKFullHomeCleaning.webp", 
+        "price": 14999, 
+        "oldPrice": 17399, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 157, 
+        "productName": "3000-4000 sq ft Unfurnished bungalow cleaning", 
+        "productImage": "../img/unfurnished2.webp", 
+        "price": 14499, 
+        "oldPrice": 17299, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 158, 
+        "productName": "3000-4000 sq ft Furnished bungalow cleaning", 
+        "productImage": "../img/2BHKFullHomeCleaning.webp", 
+        "price": 16999, 
+        "oldPrice": 20499, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    
+    { 
+        "productId": 159, 
+        "productName": "4000-5000 sq ft Unfurnished bungalow cleaning", 
+        "productImage": "../img/unfurnished3.webp", 
+        "price": 16999, 
+        "oldPrice": 20499, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 160, 
+        "productName": "4000-5000 sq ft Furnished bungalow cleaning", 
+        "productImage": "../img/3BHKFullHomeCleaning.webp", 
+        "price": 18999, 
+        "oldPrice": 25699, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    
+    { 
+        "productId": 161, 
+        "productName": "5000-6000 sq ft Unfurnished bungalow cleaning", 
+        "productImage": "../img/unfurnished4.webp", 
+        "price": 18999, 
+        "oldPrice": 24599, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 162, 
+        "productName": "5000-6000 sq ft Furnished bungalow cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 21999, 
+        "oldPrice": 29899, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 163, 
+        "productName": "6000-7000 sq ft Unurnished bungalow cleaning", 
+        "productImage": "../img/unfurnished4.webp", 
+        "price": 21999, 
+        "oldPrice": 28099, 
+        "type": "Bungalow Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 164, 
+        "productName": "6000-7000 sq ft Furnished bungalow cleaning", 
+        "productImage": "../img/4BHKFullHomeCleaning.webp", 
+        "price": 24999, 
+        "oldPrice": 35100, 
+        "type": "Bungalow Cleaning", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     }
 ]
