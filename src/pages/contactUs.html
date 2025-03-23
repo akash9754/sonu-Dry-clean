@@ -63,18 +63,19 @@
             <!-- Contact Form -->
             <div class="bg-white p-8 rounded-xl shadow-lg">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Send Us a Message</h3>
-                <form class="space-y-4">
+                <form name="form" class="space-y-4">
+                    <div id="final"><h1></h1></div>
                     <div>
                         <label class="block text-gray-700 font-medium">Your Name</label>
-                        <input type="text" placeholder="Enter your name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
                     </div>
                     <div>
                         <label class="block text-gray-700 font-medium">Your Email</label>
-                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <input type="email" placeholder="Enter your email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
                     </div>
                     <div>
                         <label class="block text-gray-700 font-medium">Your Message</label>
-                        <textarea placeholder="Write your message..." class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" rows="4"></textarea>
+                        <textarea placeholder="Write your message..." id="message" name="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" rows="4"></textarea>
                     </div>
                     <button type="submit" class="w-full bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
                 </form>
@@ -121,6 +122,17 @@
         </div>
 
     </div>
+
+    <!-- Modal Popup -->
+    <div id="popupModal" class="hidden">
+        <div  class="fixed inset-0 bg-opacity-50 flex items-center justify-center ">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+                <h2 class="text-xl font-semibold mb-4">Message sent!</h2>
+                <p>Your message has been successfully send.</p>
+                <button id="closeModal" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
+            </div>
+        </div>
+        </div>
       <!-- =========================  Footer section ============================== -->
 
       <footer class="bg-gray-900 text-white mt-5 py-10">
@@ -204,5 +216,62 @@
     <!-- =========================  Footer section End =========================== -->
 
     <script src="../script/navResponsive.js"></script>
+    <script>
+        document.getElementById("closeModal").addEventListener("click", function() {
+            document.getElementById("popupModal").classList.add("hidden");
+        });
+    </script>
+    <script>
+        const url = "https://script.google.com/macros/s/AKfycbwi5V-iv_-l3b1KvnOV-D9jJleen8ZVOEQ_1M2vdm4tzl28lute5QP2DAQ24Bifh-hjaA/exec"
+        const form = document.forms['form'];
+            const result = document.getElementById('final');
+            form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+
+            const name1 = document.getElementById("name").value.trim();
+            const email1 = document.getElementById("email").value.trim();
+            const message1 = document.getElementById("message").value.trim();
+
+            if (!name1 || !email1 || !message1) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+        const formData = new FormData(form);
+
+        try {
+            fetch(url,{
+                            method:"POST",
+                            body : formData
+                        })
+                        .then((res)=>res.text())
+                        .then((finalRes)=>{
+                                result.innerHTML = finalRes;
+                                result.style.color = 'green'
+    
+                                document.getElementById("popupModal").classList.remove("hidden");
+    
+                                document.getElementById('name').value = ""; // Reset input field
+                                document.getElementById("email").value = "";
+                                document.getElementById("message").value = "";
+                                setTimeout(()=>{
+                                    result.innerHTML = ''
+                                },5000)
+                            })
+                        .catch(error => {
+                                console.error("Error : ", error);
+                                result.innerHTML = error;
+                                result.style.color = 'red'
+                                setTimeout(()=>{
+                                    result.innerHTML = ''
+                                },5000)
+                            
+                            });
+        } catch (error) {
+            console.log("error in sending ", error.message)
+        }
+
+    })
+    </script>
 </body>
 </html>

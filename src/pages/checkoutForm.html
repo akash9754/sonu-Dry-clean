@@ -128,7 +128,7 @@
 
      <!-- Modal Popup -->
       <div id="popupModal" class="hidden">
-        <div  class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center ">
+        <div  class="fixed inset-0  bg-opacity-50 flex items-center justify-center ">
             <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
                 <h2 class="text-xl font-semibold mb-4">Order Confirmed!</h2>
                 <p>Your order has been successfully placed.</p>
@@ -218,13 +218,11 @@
     
     
 
-<script>
-    
-    
-    document.getElementById("closeModal").addEventListener("click", function() {
-        document.getElementById("popupModal").classList.add("hidden");
-    });
-</script>
+        <script>
+            document.getElementById("closeModal").addEventListener("click", function() {
+                document.getElementById("popupModal").classList.add("hidden");
+            });
+        </script>
     <!-- =========================  Footer section End =========================== -->
     <script src="../script/navResponsive.js"></script>
     
