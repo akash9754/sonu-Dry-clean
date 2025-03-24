@@ -544,5 +544,23 @@
         "oldPrice": 35100, 
         "type": "Bungalow Cleaning", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    { 
+        "productId": 165, 
+        "productName": "Cusion cleaning", 
+        "productImage": "../img/cushion.webp", 
+        "price": 149, 
+        "oldPrice": 199, 
+        "type": "Sofa Cleaning", 
+        "description": "Additional cost per setting beyond the initial 5 settings." 
+    },
+    { 
+        "productId": 166, 
+        "productName": "AC Water leakage repair", 
+        "productImage": "../img/acWaterRepair.webp", 
+        "price": 719, 
+        "oldPrice": 799, 
+        "type": "AC Cleaning", 
+        "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
     }
 ]
