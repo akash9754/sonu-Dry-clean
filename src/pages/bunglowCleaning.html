@@ -226,19 +226,23 @@
         </div>
     </div>
 
-     <!-- WhatsApp Icon -->
-     <div class="fixed bottom-6 right-6 flex flex-col items-center gap-4">
+      <!-- WhatsApp Icon & Cart Icon -->
+      <div class="fixed bottom-6 right-6 flex flex-col items-center gap-4">
 
-            <a href="https://wa.me/918817366188?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Can%20you%20help%20me%3F"
-            class="bg-green-500 hover:bg-green-600 transition flex items-center justify-center 
-                    w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg"
-            target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                alt="WhatsApp" class="w-8 h-8 sm:w-10 sm:h-10">
-        </a>
+        <a href="https://wa.me/918817366188?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Can%20you%20help%20me%3F"
+        class="bg-green-500 hover:bg-green-600 transition flex items-center justify-center 
+                w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg"
+        target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+            alt="WhatsApp" class="w-8 h-8 sm:w-10 sm:h-10">
+    </a>
 
-        <button class="bg-blue-600 text-white p-3 rounded-full shadow md:hidden" onclick="toggleCart()">🛒</button>
-    </div>
+    <button class="bg-blue-600 text-white p-3 rounded-full shadow relative" onclick="toggleCart()">
+        🛒
+        <span id="cart-count" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full "><i class="hidden">0</i></span>
+    </button>
+
+</div>
 
 
      <!-- =========================  Footer section ============================== -->
