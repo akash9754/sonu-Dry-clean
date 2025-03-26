@@ -55,9 +55,14 @@ function removeFromCart(id) {
 function updateCart() {
     const cartSection = document.getElementById("cart");
     const checkoutBtn = document.getElementById("checkout-btn");
+    const cartCount = document.getElementById("cart-count");
+
     cartSection.innerHTML = cart.length ? "" : "<p class='text-gray-500'>No items in your cart</p>";
     
+    let totalQuantity = 0;
+
     cart.forEach(item => {
+        totalQuantity += item.quantity;
         cartSection.innerHTML += `
             <div class="flex items-center justify-between bg-gray-100 p-3 rounded shadow-md">
                 <div class="flex-1">
@@ -70,6 +75,10 @@ function updateCart() {
     });
     
     checkoutBtn.classList.toggle("hidden", cart.length === 0);
+
+    // Update cart count on the button
+    cartCount.textContent = totalQuantity;
+    cartCount.classList.toggle("hidden", totalQuantity === 0);
 }
 
 function saveCart() {
@@ -80,6 +89,7 @@ function toggleCart() {
     const cartSection = document.getElementById("cart-section");
     cartSection.classList.toggle("hidden");
 }
+
 
 function proceedToCheckout() {
     if (cart.length > 0) {
