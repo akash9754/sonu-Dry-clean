@@ -350,7 +350,7 @@
         "productImage": "../img/Ceiling Fan Cleaning.webp",
         "price": 79,
         "oldPrice": 99,
-        "type": "Fan Cleaning",
+        "type": "Kitchen Cleaning",
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
@@ -359,7 +359,7 @@
         "productImage": "../img/CeilingFanCleaning2.webp",
         "price": 149,
         "oldPrice": 198,
-        "type": "Fan Cleaning",
+        "type": "Kitchen Cleaning",
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
@@ -368,7 +368,7 @@
         "productImage": "../img/gasStove.webp",
         "price": 150,
         "oldPrice": 199,
-        "type": "Mini Services",
+        "type": "Kitchen Cleaning",
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
@@ -377,7 +377,7 @@
         "productImage": "../img/microwave.webp",
         "price": 499,
         "oldPrice": 599,
-        "type": "Mini Services",
+        "type": "Kitchen Cleaning",
         "description": "Dust removal and wiping of ceiling fan blades."
     },
     {
@@ -547,7 +547,7 @@
     },
     { 
         "productId": 165, 
-        "productName": "Cusion cleaning", 
+        "productName": "Cushion Cleaning - 1 Set (5 Cushions)", 
         "productImage": "../img/cushion.webp", 
         "price": 149, 
         "oldPrice": 199, 
@@ -562,5 +562,32 @@
         "oldPrice": 799, 
         "type": "AC Cleaning", 
         "description": "Comprehensive cleaning including fan, windows, balcony, bathroom, doors, curtains, furniture, kitchen, sofa, carpet, and mattress." 
+    },
+    {
+        "productId": 167,
+        "productName": "Window Cleaning - Less than 15 sq. ft.",
+        "productImage": "../img/window1.webp",
+        "price": 199,
+        "oldPrice": 249,
+        "type": "Mini Services",
+        "description": "Dust removal and wiping of ceiling fan blades."
+    },
+    {
+        "productId": 168,
+        "productName": "Window Cleaning - 15 to 30 sq. ft.",
+        "productImage": "../img/window2.webp",
+        "price": 299,
+        "oldPrice": 349,
+        "type": "Mini Services",
+        "description": "Dust removal and wiping of ceiling fan blades."
+    },
+    {
+        "productId": 169,
+        "productName": "Window Cleaning - 30 to 50 sq. ft.",
+        "productImage": "../img/window3.webp",
+        "price": 499,
+        "oldPrice": 549,
+        "type": "Mini Services",
+        "description": "Dust removal and wiping of ceiling fan blades."
     }
 ]

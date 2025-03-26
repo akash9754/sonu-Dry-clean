@@ -447,6 +447,9 @@
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
