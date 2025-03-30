@@ -11,7 +11,7 @@
     {
          "productId": 170,
          "productName": "Intense Bathroom Cleaning – 3 Times a Month (1 Washroom)", 
-         "productImage": "../img/intenseBathroom.webp", 
+         "productImage": "../img/bathroomCleaningMonthly.webp", 
          "price": 1000, 
          "oldPrice": 1650, 
          "type": "Bathroom Cleaning", 
